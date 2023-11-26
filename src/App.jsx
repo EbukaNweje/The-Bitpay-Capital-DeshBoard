@@ -23,7 +23,6 @@ const router = createBrowserRouter([
     {
         path: '/',
         element: <HomeRoute/>,
-        
     },
     {
         path: "dashboard/:id",
