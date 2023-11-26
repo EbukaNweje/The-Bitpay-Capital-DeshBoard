@@ -1,10 +1,13 @@
 
 import { Link } from 'react-router-dom';
-
+import { useParams } from 'react-router-dom';
 
 const HomeE = () => {
 
-  const id = localStorage.getItem("userId")
+  const {id} = useParams()
+
+  console.log(id)
+
 
 
     return (

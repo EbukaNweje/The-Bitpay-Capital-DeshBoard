@@ -11,7 +11,7 @@ const HomeRoute = () => {
   return (
     <>
       <Routes>
-            <Route index path="/"  element={<HomeE/>} />
+            <Route index path="/:id"  element={<HomeE/>} />
         </Routes>
     </>
   )
