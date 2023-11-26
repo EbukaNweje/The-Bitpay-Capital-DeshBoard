@@ -1,6 +1,6 @@
 import "./Dashboard.css";
-// import Logo from "../../assets/Swift-Earn-Logo.png";
-import Logo from "../../assets/Swift-Earn-Logo.png";
+import Logo from "../../assets/Swift-Earn-Logo.jpg";
+// import Logo from "../../assets/Swift-Earn-Logo.jpg";
 import {NavLink} from "react-router-dom";
 import {IoHomeOutline} from "react-icons/io5";
 import {LuHardDriveDownload} from "react-icons/lu";
