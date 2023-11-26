@@ -20,11 +20,22 @@ import {GoDatabase} from "react-icons/go";
 import {HiMiniUser} from "react-icons/hi2";
 import {FiLogOut} from "react-icons/fi";
 import {useState, useEffect, useRef} from "react";
-import {Outlet} from "react-router-dom";
+// import {Outlet} from "react-router-dom";
 import { RiMenu3Fill } from "react-icons/ri";
 import { useParams } from 'react-router-dom';
 import {useDispatch} from 'react-redux'
 import {swiftUserData} from '../store/FeaturesSlice'
+import DashHome from "../../Pages/DashHome/DashHome";
+import Deposit from "../../Pages/Deposit/Deposit";
+import WithdrawFunds from "../../Pages/Withdrawal/WithdrawFunds";
+import ProfitHistory from "../../Pages/ProfitHistory/ProfitHistory";
+import Transactions from "../../Pages/Transactions/Transactions";
+import Transfer from "../../Pages/TransferFunds/TransferFunds";
+import Profile from "../../Pages/Profile/Profile";
+import TradingPlans from "../../Pages/TradingPlans/TradingPlans";
+import MyPlans from "../../Pages/MyPlans/MyPlans";
+import Referrals from "../../Pages/Referrals/Referrals";
+import ScrollToTop from "../ScrollToTop";
 
 
 const Dashboard = () => {
@@ -100,15 +111,161 @@ const [userData, setUserdata] = useState({})
         window.location.href = "https://the-bitpay-capital.vercel.app"
       }
 
+      const [showHome, setShowHome] = useState(true);
+      const [showdeposit, setShowDeposit] = useState(false);
+      const [showWithdraw, setSHowWithdraw] = useState(false);
+      const [showProfitHistory, setShowProfitHistory] = useState(false);
+      const [showTransaction, setShowTransaction] = useState(false);
+      const [showTransferFunds, setShowTransferFunds] = useState(false);
+      const [showProfile, setShowProfile] = useState(false);
+      const [showTradingPlans, setTradingPlans] = useState(false);
+      const [showMyPlans, setShowMyPlans] = useState(false);
+      const [showReferrals, setShowReferrals] = useState(false);
+
+      const handleShowHome = () => {
+          setShowHome(true);
+          setShowDeposit(false);
+          setSHowWithdraw(false);
+          setShowProfitHistory(false);
+          setShowTransaction(false);
+          setShowTransferFunds(false);
+          setShowProfile(false);
+          setTradingPlans(false);
+          setShowMyPlans(false);
+          setShowReferrals(false);
+          handleLinkClick();
+      };
+      const handleShowDeposit = () => {
+          setShowHome(false);
+          setShowDeposit(true);
+          setSHowWithdraw(false);
+          setShowProfitHistory(false);
+          setShowTransaction(false);
+          setShowTransferFunds(false);
+          setShowProfile(false);
+          setTradingPlans(false);
+          setShowMyPlans(false);
+          setShowReferrals(false);
+          handleLinkClick();
+      };
+      const handleShowWithdraw = () => {
+          setShowHome(false);
+          setShowDeposit(false);
+          setSHowWithdraw(true);
+          setShowProfitHistory(false);
+          setShowTransaction(false);
+          setShowTransferFunds(false);
+          setShowProfile(false);
+          setTradingPlans(false);
+          setShowMyPlans(false);
+          setShowReferrals(false);
+          handleLinkClick();
+      };
+      const handleShowProfit = () => {
+          setShowHome(false);
+          setShowDeposit(false);
+          setSHowWithdraw(false);
+          setShowProfitHistory(true);
+          setShowTransaction(false);
+          setShowTransferFunds(false);
+          setShowProfile(false);
+          setTradingPlans(false);
+          setShowMyPlans(false);
+          setShowReferrals(false);
+          handleLinkClick();
+      };
+      const handleShowTransactions = () => {
+          setShowHome(false);
+          setShowDeposit(false);
+          setSHowWithdraw(false);
+          setShowProfitHistory(false);
+          setShowTransaction(true);
+          setShowTransferFunds(false);
+          setShowProfile(false);
+          setTradingPlans(false);
+          setShowMyPlans(false);
+          setShowReferrals(false);
+          handleLinkClick();
+      };
+      const handleShowTransferFunds = () => {
+          setShowHome(false);
+          setShowDeposit(false);
+          setSHowWithdraw(false);
+          setShowProfitHistory(false);
+          setShowTransaction(false);
+          setShowTransferFunds(true);
+          setShowProfile(false);
+          setTradingPlans(false);
+          setShowMyPlans(false);
+          setShowReferrals(false);
+          handleLinkClick();
+      };
+      const handleShowProfile = () => {
+          setShowHome(false);
+          setShowDeposit(false);
+          setSHowWithdraw(false);
+          setShowProfitHistory(false);
+          setShowTransaction(false);
+          setShowTransferFunds(false);
+          setShowProfile(true);
+          setTradingPlans(false);
+          setShowMyPlans(false);
+          setShowReferrals(false);
+          handleLinkClick();
+      };
+      const handleShowTradingPlans = () => {
+          setShowHome(false);
+          setShowDeposit(false);
+          setSHowWithdraw(false);
+          setShowProfitHistory(false);
+          setShowTransaction(false);
+          setShowTransferFunds(false);
+          setShowProfile(false);
+          setTradingPlans(true);
+          setShowMyPlans(false);
+          setShowReferrals(false);
+          handleLinkClick();
+      };
+      const handleShowMyPlans = () => {
+          setShowHome(false);
+          setShowDeposit(false);
+          setSHowWithdraw(false);
+          setShowProfitHistory(false);
+          setShowTransaction(false);
+          setShowTransferFunds(false);
+          setShowProfile(false);
+          setTradingPlans(false);
+          setShowMyPlans(true);
+          setShowReferrals(false);
+          handleLinkClick();
+      };
+      const handleShowReferrals = () => {
+          setShowHome(false);
+          setShowDeposit(false);
+          setSHowWithdraw(false);
+          setShowProfitHistory(false);
+          setShowTransaction(false);
+          setShowTransferFunds(false);
+          setShowProfile(false);
+          setTradingPlans(false);
+          setShowMyPlans(false);
+          setShowReferrals(true);
+          handleLinkClick();
+      };
+
     return (
         <>
+        <ScrollToTop/>
             <div className="DashboardBody bigScreen">
-                <div className={`DashboardWrapper ${showNav? 'active':" " }`}>
-                    <div className={`DashboardNav ${showNav? 'active':""}`}>
+                <div className={`DashboardWrapper ${showNav ? "active" : " "}`}>
+                    <div className={`DashboardNav ${showNav ? "active" : ""}`}>
                         <div className="DashboardNavWrapper ">
                             <div className="DashboardNavLogo">
                                 <img src={Logo} alt="" />
-                                <RiMenu3Fill className="DashboardNavLogoMenuFill" onClick={handleShowNav}/>
+                                <RiMenu3Fill
+                                    className="DashboardNavLogoMenuFill"
+                                    onClick={handleShowNav}
+                                />
                             </div>
                             <div className="DashboardNavAccountView">
                                 <div className="DashboardNavAccountViewPfp">
@@ -119,16 +276,18 @@ const [userData, setUserdata] = useState({})
                                     <p>online</p>
                                 </div>
                                 <div className="DashboardNavAccountViewBalance">
-                                    <GoDatabase /> <span>$&nbsp;{userData?.accountBalance}</span>
+                                    <GoDatabase />{" "}
+                                    <span>
+                                        $&nbsp;{userData?.accountBalance}
+                                    </span>
                                 </div>
                             </div>
                             <div className="DashboardNavLinks">
                                 <div className="DashboardNavLinksRow1">
                                     <NavLink
-                                        to={``}
-                                        className="DashboardNavLinksItem "
+                                    className="DashboardNavLinksItem"
                                         activeClassName="current"
-                                        onClick={handleLinkClick}
+                                        onClick={handleShowHome}
                                     >
                                         <span>
                                             <IoHomeOutline className="DashboardNavlinksIcons" />
@@ -136,9 +295,8 @@ const [userData, setUserdata] = useState({})
                                         <span>Home</span>
                                     </NavLink>
                                     <NavLink
-                                        to={"deposit"}
                                         className="DashboardNavLinksItem "
-                                        onClick={handleLinkClick}
+                                        onClick={handleShowDeposit}
                                         activeClassName="current"
                                     >
                                         <span>
@@ -149,9 +307,8 @@ const [userData, setUserdata] = useState({})
                                 </div>
                                 <div className="DashboardNavLinksRow2">
                                     <NavLink
-                                        to={"withdrawal"}
                                         className="DashboardNavLinksItem"
-                                        onClick={handleLinkClick}
+                                        onClick={handleShowWithdraw}
                                         activeClassName="current"
                                     >
                                         <span>
@@ -160,9 +317,8 @@ const [userData, setUserdata] = useState({})
                                         <span>Withdrawal</span>
                                     </NavLink>
                                     <NavLink
-                                        to={"profit-history"}
                                         className="DashboardNavLinksItem"
-                                        onClick={handleLinkClick}
+                                        onClick={handleShowProfit}
                                         activeClassName="current"
                                     >
                                         <span>
@@ -173,9 +329,8 @@ const [userData, setUserdata] = useState({})
                                 </div>
                                 <div className="DashboardNavLinksRow3">
                                     <NavLink
-                                        to={"transactions"}
                                         className="DashboardNavLinksItem"
-                                        onClick={handleLinkClick}
+                                        onClick={handleShowTransactions}
                                         activeClassName="current"
                                     >
                                         <span>
@@ -184,9 +339,8 @@ const [userData, setUserdata] = useState({})
                                         <span>Transactions</span>
                                     </NavLink>
                                     <NavLink
-                                        to={"transfer-funds"}
                                         className="DashboardNavLinksItem"
-                                        onClick={handleLinkClick}
+                                        onClick={handleShowTransferFunds}
                                         activeClassName="current"
                                     >
                                         <span>
@@ -197,9 +351,8 @@ const [userData, setUserdata] = useState({})
                                 </div>
                                 <div className="DashboardNavLinksRow4">
                                     <NavLink
-                                        to={"profile"}
                                         className="DashboardNavLinksItem"
-                                        onClick={handleLinkClick}
+                                        onClick={handleShowProfile}
                                         activeClassName="current"
                                     >
                                         <span>
@@ -208,11 +361,9 @@ const [userData, setUserdata] = useState({})
                                         <span>Profile</span>
                                     </NavLink>
                                     <NavLink
-                                        to={"trading-plans"}
-                                        className="DashboardNavLinksItem"   
-                                        onClick={handleLinkClick}
+                                        className="DashboardNavLinksItem"
+                                        onClick={handleShowTradingPlans}
                                         activeClassName="current"
-
                                     >
                                         <span>
                                             <FaHandHoldingDollar className="DashboardNavlinksIcons" />
@@ -222,9 +373,8 @@ const [userData, setUserdata] = useState({})
                                 </div>
                                 <div className="DashboardNavLinksRow5">
                                     <NavLink
-                                        to={"my-plans"}
                                         className="DashboardNavLinksItem"
-                                        onClick={handleLinkClick}
+                                        onClick={handleShowMyPlans}
                                         activeClassName="current"
                                     >
                                         <span>
@@ -233,9 +383,8 @@ const [userData, setUserdata] = useState({})
                                         <span>My Plans</span>
                                     </NavLink>
                                     <NavLink
-                                        to={"referuser"}
                                         className="DashboardNavLinksItem"
-                                        onClick={handleLinkClick}
+                                        onClick={handleShowReferrals}
                                         activeClassName="current"
                                     >
                                         <span>
@@ -258,11 +407,14 @@ const [userData, setUserdata] = useState({})
                             </div>
                         </div>
                     </div>
-                    <div className={`DashboardMain ${showNav? "active": "" }`}>
+                    <div className={`DashboardMain ${showNav ? "active" : ""}`}>
                         <div className="DashboardMainHeader">
                             <div className="DashboardMainHeaderBox">
                                 <div className="DashboardMainHeaderBoxHambuger">
-                                    <MdOutlineMenu className="MdOutlineMenu" onClick={handleShowNav}/>
+                                    <MdOutlineMenu
+                                        className="MdOutlineMenu"
+                                        onClick={handleShowNav}
+                                    />
                                 </div>
                                 <div
                                     className="DashboardMainHeaderBoxAccount"
@@ -286,7 +438,10 @@ const [userData, setUserdata] = useState({})
                                                 </span>
                                                 My profile
                                             </div>
-                                            <div className="DashboardMainHeaderUserAccDivLogout" onClick={handleLogOut}>
+                                            <div
+                                                className="DashboardMainHeaderUserAccDivLogout"
+                                                onClick={handleLogOut}
+                                            >
                                                 <span>
                                                     <FiLogOut />
                                                 </span>
@@ -298,7 +453,28 @@ const [userData, setUserdata] = useState({})
                             ) : null}
                         </div>
                         <div className="DashboardMainContent">
-                            <Outlet data = {userData} />
+                            {/* <Outlet data = {userData} /> */}
+                            {showHome ? (
+                                <DashHome />
+                            ) : showdeposit ? (
+                                <Deposit />
+                            ) : showWithdraw ? (
+                                <WithdrawFunds />
+                            ) : showProfitHistory ? (
+                                <ProfitHistory />
+                            ) : showTransaction ? (
+                                <Transactions />
+                            ) : showTransferFunds ? (
+                                <Transfer />
+                            ) : showProfile ? (
+                                <Profile />
+                            ) : showTradingPlans ? (
+                                <TradingPlans />
+                            ) : showMyPlans ? (
+                                <MyPlans />
+                            ) : showReferrals ? (
+                                <Referrals />
+                            ) : null}
                         </div>
                         <div className="DashboardMainFooter">
                             <p>All Rights Reserved © Swift Earn Trade 2023</p>
