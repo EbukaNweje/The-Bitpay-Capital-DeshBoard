@@ -1,0 +1,290 @@
+/* 
+/* TEMPLATE FOR STYLINGS */
+
+/* Media Query Styling For Desktop Device */
+
+
+.ProfitHistoryBody{
+  width: 100%;
+  height: max-content;
+  padding: 10px 20px;
+}
+.ProfitHistoryBody h1{
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 36.4px;
+  color: #fff;
+}
+
+.ProfitHistoryContent{
+  width: 100%;
+  height: max-content;
+  background: #fff;
+  border-radius: 5px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ProfitHistoryContentTop{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  background: #ebf8fc;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+}
+.ProfitHistoryContentTop p{
+  width: 25%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+    font-weight: 600;
+    line-height: 20.4px;
+    color: rgb(132, 146, 166);
+}
+
+.ProfitHistoryContentDown{
+  width: 100%;
+  height: 60px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.ProfitHistoryContentDown::-webkit-scrollbar{
+  display: none;
+}
+
+.ProfitHistoryContentItem{
+  width: 100%;
+  height: 50px;
+  background: #c8dadf;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.ProfitHistoryContentItem p{
+  width: 25%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+    font-weight: 600;
+    line-height: 20.4px;
+    color: rgb(63, 63, 63);
+}
+
+
+
+
+
+/* End of Media Query Styling For Desktop Device */
+
+/* Media Query Styling for Small Desktop  */
+
+@media only screen and (max-width: 1200px){
+
+
+
+}
+
+/* End of Media Query Styling for Tablet Device */
+
+
+/* Media Query Styling for Big Tablet Device */
+
+@media only screen and (max-width: 900px){
+
+
+
+}
+
+/* End of Media Query Styling for Tablet Device */
+/* Media Query Styling for Tablet Device */
+
+@media only screen and (max-width: 760px){
+
+
+
+}
+
+/* End of Media Query Styling for Tablet Device */
+
+/* Media Query Styling for Mobile Device */
+
+@media only screen and (max-width: 480px) {
+
+  .ProfitHistoryBody{
+    width: 100%;
+    height: max-content;
+    padding: 5px 10px;
+  }
+  .ProfitHistoryBody h1{
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 36.4px;
+    color: #fff;
+  }
+  
+  .ProfitHistoryContent{
+    width: 100%;
+    height: max-content;
+    background: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .ProfitHistoryContentTop{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    background: #ebf8fc;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+  }
+  .ProfitHistoryContentTop p{
+    width: 25%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20.4px;
+    color: rgb(132, 146, 166);
+  }
+  
+  .ProfitHistoryContentDown{
+    width: 100%;
+    height: 60px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .ProfitHistoryContentDown::-webkit-scrollbar{
+    display: none;
+  }
+  
+  .ProfitHistoryContentItem{
+    width: 100%;
+    height: 50px;
+    background: #c8dadf;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+  }
+  
+  .ProfitHistoryContentItem p{
+    width: 25%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20.4px;
+    color: rgb(63, 63, 63);
+  }
+
+}
+
+/* End of Media Query Styling for Mobile Device */
+
+
+/* Media Query Styling for Mobile Device */
+
+@media only screen and (max-width: 351px) {
+
+  .ProfitHistoryBody{
+    width: 100%;
+    height: max-content;
+    padding: 5px 10px;
+  }
+  .ProfitHistoryBody h1{
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 36.4px;
+    color: #fff;
+  }
+  
+  .ProfitHistoryContent{
+    width: 100%;
+    height: max-content;
+    background: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .ProfitHistoryContentTop{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    background: #ebf8fc;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+  }
+  .ProfitHistoryContentTop p{
+    width: 25%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20.4px;
+    color: rgb(132, 146, 166);
+  }
+  
+  .ProfitHistoryContentDown{
+    width: 100%;
+    height: 60px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .ProfitHistoryContentDown::-webkit-scrollbar{
+    display: none;
+  }
+  
+  .ProfitHistoryContentItem{
+    width: 100%;
+    height: 50px;
+    background: #c8dadf;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+  }
+  
+  .ProfitHistoryContentItem p{
+    width: 25%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20.4px;
+    color: rgb(63, 63, 63);
+  }
+
+
+}
+
+/* End of Media Query Styling for Mobile Device */ 

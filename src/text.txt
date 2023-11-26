@@ -1,0 +1,58 @@
+/* 
+/* TEMPLATE FOR STYLINGS */
+
+/* Media Query Styling For Desktop Device */
+
+
+
+
+/* End of Media Query Styling For Desktop Device */
+
+/* Media Query Styling for Small Desktop  */
+
+@media only screen and (max-width: 1200px){
+
+
+
+}
+
+/* End of Media Query Styling for Tablet Device */
+
+
+/* Media Query Styling for Big Tablet Device */
+
+@media only screen and (max-width: 900px){
+
+
+
+}
+
+/* End of Media Query Styling for Tablet Device */
+/* Media Query Styling for Tablet Device */
+
+@media only screen and (max-width: 760px){
+
+
+
+}
+
+/* End of Media Query Styling for Tablet Device */
+
+/* Media Query Styling for Mobile Device */
+
+@media only screen and (max-width: 480px) {
+
+
+}
+
+/* End of Media Query Styling for Mobile Device */
+
+
+/* Media Query Styling for Mobile Device */
+
+@media only screen and (max-width: 351px) {
+
+
+}
+
+/* End of Media Query Styling for Mobile Device */ 

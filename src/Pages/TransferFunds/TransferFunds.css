@@ -1,0 +1,485 @@
+/* 
+/* TEMPLATE FOR STYLINGS */
+
+/* Media Query Styling For Desktop Device */
+
+.TransferFundsBody{
+  width: 100%;
+  height: max-content;
+  padding: 15px 20px;
+}
+.TransferFundsBody h1{
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 26.8px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.TransferFundsContent{
+  width: 100%;
+  height: 80vh;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.TransferFundsContentWrap{
+  width: 60%;
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.TransferFundsTop{
+  width: 300px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  box-shadow: rgba(163, 222, 231, 0.2) 0px 5px 15px;
+}
+.TransferFundsTop span{
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.TransferFundsTop span .IoWalletOutline{
+  width: 30px;
+  height: 30px;
+}
+.TransferFundsTop p{
+  width: max-content;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26px;
+  color: rgb(60, 72, 88);
+}
+.TransferFundsTop p span{
+  width: max-content;
+  font-size: 12.8px;
+  font-weight: 400;
+  line-height: 21.76px;
+  color: rgb(132, 146, 166);
+}
+
+.TransferFundsDown{
+  width: 100%;
+  height: 79%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.TransferFundsDownA{
+  width: 100%;
+  height: max-content;
+}
+.TransferFundsDownA p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24.4px;
+  color: rgb(132, 146, 166);
+}
+.TransferFundsDownA p span{
+  color: red;
+}
+.TransferFundsDownA input{
+  width: 100%;
+  height: 50px;
+  border: 1px solid #c5e6ef;
+  border-radius: 5px;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+  outline: none;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #8492a6;
+}
+
+.TransferFundsDownA input{
+  width: 100%;
+  height: 50px;
+  padding: 0px 20px;
+  border: 1px solid rgb(216, 216, 216);
+  border-radius: 5px; 
+  transition: box-shadow 0.4s ease;
+  transition: border 0.3s ease;
+  outline: none;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #8492a6;
+}
+.TransferFundsDownA input::placeholder{
+  color: #8492a6;;
+}
+.TransferFundsDownA input:focus{
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border: 1px solid rgb(74, 74, 74);
+  transition: box-shadow 0.4s ease;
+}
+.TransferFundsDownA input:default{
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border: 1px solid rgb(23, 23, 23);
+  transition: box-shadow 0.5s ease;
+}
+
+.TransferFundsDownB{
+  width: 100%;
+  height: max-content;
+}
+
+.TransferFundsDownB p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24.4px;
+  color: rgb(132, 146, 166);
+}
+.TransferFundsDownB p span{
+  color: red;
+}
+.TransferFundsDownB input{
+  width: 100%;
+  height: 50px;
+  border: 1px solid #c5e6ef;
+  border-radius: 5px;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+  outline: none;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #8492a6;
+  padding-left: 15px;
+}
+
+.TransferFundsDownB input::placeholder{
+  color: #8492a6;;
+}
+.TransferFundsDownB input:focus{
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border: 1px solid rgb(74, 74, 74);
+  transition: box-shadow 0.4s ease;
+}
+.TransferFundsDownB input:default{
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border: 1px solid rgb(23, 23, 23);
+  transition: box-shadow 0.5s ease;
+}
+
+.TransferFundsDownC{
+  width: 100%;
+  height: max-content;
+}
+
+.TransferFundsDownC p {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24.4px;
+  color: rgb(60, 72, 88)
+}
+.TransferFundsDownC p span{
+  color: red;
+}
+.TransferFundsDownC button{
+  margin-top: 15px;
+  width: 100%;
+  height: 45px;
+  background: var(--swift-primary--);
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s ease-in-out;
+  color: #fff;
+}
+.TransferFundsDownC button:hover{
+  background: #196882;
+
+}
+
+
+
+
+
+
+
+
+
+
+/* End of Media Query Styling For Desktop Device */
+
+/* Media Query Styling for Small Desktop  */
+
+@media only screen and (max-width: 1200px){
+
+
+
+}
+
+/* End of Media Query Styling for Tablet Device */
+
+
+/* Media Query Styling for Big Tablet Device */
+
+@media only screen and (max-width: 900px){
+
+
+
+}
+
+/* End of Media Query Styling for Tablet Device */
+/* Media Query Styling for Tablet Device */
+
+@media only screen and (max-width: 760px){
+
+
+
+}
+
+/* End of Media Query Styling for Tablet Device */
+
+/* Media Query Styling for Mobile Device */
+
+@media only screen and (max-width: 480px) {
+
+  .TransferFundsBody{
+    width: 100%;
+    height: max-content;
+    padding: 15px 20px;
+  }
+  .TransferFundsBody h1{
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 26.8px;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  
+  .TransferFundsContent{
+    width: 100%;
+    height: 80vh;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .TransferFundsContentWrap{
+    width: 85%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .TransferFundsTop{
+    width: 300px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    box-shadow: rgba(163, 222, 231, 0.2) 0px 5px 15px;
+  }
+  .TransferFundsTop span{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  .TransferFundsTop span .IoWalletOutline{
+    width: 30px;
+    height: 30px;
+  }
+  .TransferFundsTop p{
+    width: max-content;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 26px;
+    color: rgb(60, 72, 88);
+  }
+  .TransferFundsTop p span{
+    width: max-content;
+    font-size: 12.8px;
+    font-weight: 400;
+    line-height: 21.76px;
+    color: rgb(132, 146, 166);
+  }
+  
+  .TransferFundsDown{
+    width: 100%;
+    height: 79%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .TransferFundsDownA{
+    width: 100%;
+    height: max-content;
+  }
+  .TransferFundsDownA p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24.4px;
+    color: rgb(132, 146, 166);
+  }
+  .TransferFundsDownA p span{
+    color: red;
+  }
+  .TransferFundsDownA input{
+    width: 100%;
+    height: 50px;
+    border: 1px solid #c5e6ef;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+    outline: none;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #8492a6;
+  }
+  
+  .TransferFundsDownA input{
+    width: 100%;
+    height: 50px;
+    padding: 0px 20px;
+    border: 1px solid rgb(216, 216, 216);
+    border-radius: 5px; 
+    transition: box-shadow 0.4s ease;
+    transition: border 0.3s ease;
+    outline: none;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #8492a6;
+  }
+  .TransferFundsDownA input::placeholder{
+    color: #8492a6;;
+  }
+  .TransferFundsDownA input:focus{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border: 1px solid rgb(74, 74, 74);
+    transition: box-shadow 0.4s ease;
+  }
+  .TransferFundsDownA input:default{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border: 1px solid rgb(23, 23, 23);
+    transition: box-shadow 0.5s ease;
+  }
+  
+  .TransferFundsDownB{
+    width: 100%;
+    height: max-content;
+  }
+  
+  .TransferFundsDownB p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24.4px;
+    color: rgb(132, 146, 166);
+  }
+  .TransferFundsDownB p span{
+    color: red;
+  }
+  .TransferFundsDownB input{
+    width: 100%;
+    height: 50px;
+    border: 1px solid #c5e6ef;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+    outline: none;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #8492a6;
+    padding-left: 15px;
+  }
+  
+  .TransferFundsDownB input::placeholder{
+    color: #8492a6;;
+  }
+  .TransferFundsDownB input:focus{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border: 1px solid rgb(74, 74, 74);
+    transition: box-shadow 0.4s ease;
+  }
+  .TransferFundsDownB input:default{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border: 1px solid rgb(23, 23, 23);
+    transition: box-shadow 0.5s ease;
+  }
+  
+  .TransferFundsDownC{
+    width: 100%;
+    height: max-content;
+  }
+  
+  .TransferFundsDownC p {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24.4px;
+    color: rgb(60, 72, 88)
+  }
+  .TransferFundsDownC p span{
+    color: red;
+  }
+  .TransferFundsDownC button{
+    margin-top: 15px;
+    width: 100%;
+    height: 45px;
+    background: var(--swift-primary--);
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease-in-out;
+    color: #fff;
+  }
+  .TransferFundsDownC button:hover{
+    background: #196882;
+  
+  }
+
+}
+
+/* End of Media Query Styling for Mobile Device */
+
+
+/* Media Query Styling for Mobile Device */
+
+@media only screen and (max-width: 351px) {
+
+
+}
+
+/* End of Media Query Styling for Mobile Device */ 

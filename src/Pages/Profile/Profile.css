@@ -1,0 +1,909 @@
+/* 
+/* TEMPLATE FOR STYLINGS */
+
+/* Media Query Styling For Desktop Device */
+
+.ProfileBody {
+  width: 100%;
+  height: max-content;
+  padding: 10px 20px;
+}
+
+.ProfileBody h1 {
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 36.4px;
+  color: #fff;
+}
+
+.ProfileContent {
+  width: 100%;
+  height: max-content;
+  padding: 30px;
+  background: #fff;
+}
+
+.ProfileNav {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding: 7px;
+  background: #ebf8fc;
+}
+
+.ProfileNav1,
+.ProfileNav2,
+.ProfileNav3,
+.ProfileNav4 {
+  width: max-content;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 20px;
+  color: #8492a6;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.ProfileNav1:hover,
+.ProfileNav2:hover,
+.ProfileNav3:hover,
+.ProfileNav4:hover {
+  color: rgb(30, 30, 30);
+}
+
+.ProfileNav1.active,
+.ProfileNav2.active,
+.ProfileNav3.active,
+.ProfileNav4.active {
+  color: #fff;
+  background: var(--swift-primary--);
+}
+
+.ProfileMainContent {
+  width: 100%;
+  height: max-content;
+  padding: 40px 30px;
+}
+
+.ProfileContentPS, .ProfileContentWS, .ProfileContentPwdS, .ProfileContentOS {
+  width: 100%;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.ProfileContentPSRow1, .ProfileContentPSRow2, .ProfileContentPSRow3, .ProfileContentWSRow1, .ProfileContentWSRow2, .ProfileContentPwdSRow1, .ProfileContentPwdSRow2, .ProfileContentOSRow1 {
+  width: 100%;
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+}
+.ProfileContentWSRow3  {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+.ProfileContentWSRow3 h4 {
+  font-size: 12.8px;
+  font-weight: 400;
+  line-height: 21.76px;
+  color: rgb(132, 146, 166);
+}
+
+.ProfileContentPSRow1A, .ProfileContentWSRow1A, .ProfileContentPwdSRow1A, .ProfileContentOSRow1A {
+  width: 49.5%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.ProfileContentPSRow1B, .ProfileContentWSRow1B, .ProfileContentPwdSRow1B, .ProfileContentOSRow1B {
+  width: 49.5%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.ProfileContentPSRow1A p,
+.ProfileContentPSRow1B p, .ProfileContentWSRow1A p, .ProfileContentWSRow1B p, .ProfileContentPwdSRow1B p, .ProfileContentPwdSRow1A p, .ProfileContentOSRow1A p, .ProfileContentOSRow1B p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27.2px;
+  color: rgb(132, 146, 166);
+}
+
+.ProfileContentPSRow1A input,
+.ProfileContentPSRow1B input, .ProfileContentWSRow1A input,
+.ProfileContentWSRow1B input, .ProfileContentPwdSRow1B input, .ProfileContentPwdSRow1A input {
+  width: 100%;
+  height: 55px;
+  border: 1px solid #c5e6ef;
+  border-radius: 5px;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+  outline: none;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #8492a6;
+  padding-left: 20px;
+}
+
+.ProfileContentPSRow1A input::placeholder{
+  color: #8492a6;
+}
+.ProfileContentPSRow1B input::placeholder {
+  color: #8492a6;
+}
+.ProfileContentWSRow1B input::placeholder {
+  color: #8492a6;
+}
+.ProfileContentWSRow1A input::placeholder {
+  color: #8492a6;
+}
+.ProfileContentPwdSRow1B input::placeholder {
+  color: #8492a6;
+}
+.ProfileContentPwdSRow1A input::placeholder {
+  color: #8492a6;
+}
+
+.ProfileContentPSRow1A input:focus {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border: 1px solid rgb(74, 74, 74);
+  transition: box-shadow 0.4s ease;
+}
+
+.ProfileContentPSRow1B input:focus {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border: 1px solid rgb(74, 74, 74);
+  transition: box-shadow 0.4s ease;
+}
+.ProfileContentWSRow1B input:focus {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border: 1px solid rgb(74, 74, 74);
+  transition: box-shadow 0.4s ease;
+}
+.ProfileContentWSRow1A input:focus {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border: 1px solid rgb(74, 74, 74);
+  transition: box-shadow 0.4s ease;
+}
+.ProfileContentPwdSRow1B input:focus {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border: 1px solid rgb(74, 74, 74);
+  transition: box-shadow 0.4s ease;
+}
+.ProfileContentPwdSRow1A input:focus {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border: 1px solid rgb(74, 74, 74);
+  transition: box-shadow 0.4s ease;
+}
+
+.ProfileContentPSRow1B input:default {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border: 1px solid rgb(23, 23, 23);
+  transition: box-shadow 0.5s ease;
+}
+.ProfileContentPSRow1A input:default{
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border: 1px solid rgb(23, 23, 23);
+  transition: box-shadow 0.5s ease;
+}
+.ProfileContentWSRow1B input:default{
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border: 1px solid rgb(23, 23, 23);
+  transition: box-shadow 0.5s ease;
+}
+.ProfileContentPwdSRow1B input:default{
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border: 1px solid rgb(23, 23, 23);
+  transition: box-shadow 0.5s ease;
+}
+.ProfileContentPwdSRow1A input:default{
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border: 1px solid rgb(23, 23, 23);
+  transition: box-shadow 0.5s ease;
+}
+
+.ProfileContentPSRow3 textarea{
+  width: 100%;
+  height: 55px;
+  border: 1px solid #c5e6ef;
+  border-radius: 5px;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+  outline: none;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #8492a6;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
+.ProfileContentPSRow3 textarea::placeholder{
+  color: #8492a6;
+}
+.ProfileContentPSRow3 textarea:focus {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border: 1px solid rgb(74, 74, 74);
+  transition: box-shadow 0.4s ease;
+}
+.ProfileContentPSRow3 textarea:default {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border: 1px solid rgb(23, 23, 23);
+  transition: box-shadow 0.5s ease;
+}
+
+.ProfileContentPS input:read-only{
+  background: #ebf8fc;
+
+}
+
+.ProfileContentPSRow4Btn, .ProfileContentWSRow4Btn{
+  width: 100%;
+  height: 70px;
+}
+.ProfileContentPSRow4Btn button, .ProfileContentWSRow4Btn button, .ProfileContentPwdSRow4Btn button, .ProfileContentOSRow4Btn button{
+  padding: 15px 30px;
+  background: var(--swift-primary--);
+  outline: none;
+  border: none;
+  transition: all 0.3s ease-in-out;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  cursor: pointer;
+}
+.ProfileContentPSRow4Btn button:hover, .ProfileContentWSRow4Btn  button:hover, .ProfileContentPwdSRow4Btn button:hover, .ProfileContentOSRow4Btn button:hover{
+  background: #157494;
+}
+
+.AdvAccSettings {
+  width: max-content;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+.AdvAccSettings span{
+  display: flex;
+  align-items: center;
+}
+
+.ProfileContentOSRow1BInputHolder, .ProfileContentOSRow1AInputHolder{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
+
+
+
+/* End of Media Query Styling For Desktop Device */
+
+/* Media Query Styling for Small Desktop  */
+
+@media only screen and (max-width: 1200px) {}
+
+/* End of Media Query Styling for Tablet Device */
+
+
+/* Media Query Styling for Big Tablet Device */
+
+@media only screen and (max-width: 900px) {}
+
+/* End of Media Query Styling for Tablet Device */
+/* Media Query Styling for Tablet Device */
+
+@media only screen and (max-width: 760px) {}
+
+/* End of Media Query Styling for Tablet Device */
+
+/* Media Query Styling for Mobile Device */
+
+@media only screen and (max-width: 480px) {
+  .ProfileBody {
+    width: 100%;
+    height: max-content;
+    padding: 10px 20px;
+  }
+  
+  .ProfileBody h1 {
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 36.4px;
+    color: #fff;
+  }
+  
+  .ProfileContent {
+    width: 100%;
+    height: max-content;
+    padding: 20px;
+    background: #fff;
+  }
+  
+  .ProfileNav {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    background: #ebf8fc;
+    flex-wrap: wrap;
+  }
+  
+  .ProfileNav1,
+  .ProfileNav2,
+  .ProfileNav3,
+  .ProfileNav4 {
+    width: max-content;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 10px;
+    color: #8492a6;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .ProfileNav1:hover,
+  .ProfileNav2:hover,
+  .ProfileNav3:hover,
+  .ProfileNav4:hover {
+    color: rgb(30, 30, 30);
+  }
+  
+  .ProfileNav1.active,
+  .ProfileNav2.active,
+  .ProfileNav3.active,
+  .ProfileNav4.active {
+    color: #fff;
+    background: var(--swift-primary--);
+  }
+  
+  .ProfileMainContent {
+    width: 100%;
+    height: max-content;
+    padding: 20px 0px;
+  }
+  
+  .ProfileContentPS, .ProfileContentWS, .ProfileContentPwdS, .ProfileContentOS {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  
+  .ProfileContentPSRow1, .ProfileContentPSRow2, .ProfileContentPSRow3, .ProfileContentWSRow1, .ProfileContentWSRow2, .ProfileContentPwdSRow1, .ProfileContentPwdSRow2, .ProfileContentOSRow1 {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .ProfileContentWSRow3  {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .ProfileContentWSRow3 h4 {
+    font-size: 12.8px;
+    font-weight: 400;
+    line-height: 21.76px;
+    color: rgb(132, 146, 166);
+  }
+  
+  .ProfileContentPSRow1A, .ProfileContentWSRow1A, .ProfileContentPwdSRow1A, .ProfileContentOSRow1A {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+  
+  .ProfileContentPSRow1B, .ProfileContentWSRow1B, .ProfileContentPwdSRow1B, .ProfileContentOSRow1B {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .ProfileContentPSRow1A p,
+  .ProfileContentPSRow1B p, .ProfileContentWSRow1A p, .ProfileContentWSRow1B p, .ProfileContentPwdSRow1B p, .ProfileContentPwdSRow1A p, .ProfileContentOSRow1A p, .ProfileContentOSRow1B p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27.2px;
+    color: rgb(132, 146, 166);
+  }
+  
+  .ProfileContentPSRow1A input,
+  .ProfileContentPSRow1B input, .ProfileContentWSRow1A input,
+  .ProfileContentWSRow1B input, .ProfileContentPwdSRow1B input, .ProfileContentPwdSRow1A input {
+    width: 100%;
+    height: 55px;
+    border: 1px solid #c5e6ef;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+    outline: none;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #8492a6;
+    padding-left: 20px;
+  }
+  
+  .ProfileContentPSRow1A input::placeholder{
+    color: #8492a6;
+  }
+  .ProfileContentPSRow1B input::placeholder {
+    color: #8492a6;
+  }
+  .ProfileContentWSRow1B input::placeholder {
+    color: #8492a6;
+  }
+  .ProfileContentWSRow1A input::placeholder {
+    color: #8492a6;
+  }
+  .ProfileContentPwdSRow1B input::placeholder {
+    color: #8492a6;
+  }
+  .ProfileContentPwdSRow1A input::placeholder {
+    color: #8492a6;
+  }
+  
+  .ProfileContentPSRow1A input:focus {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border: 1px solid rgb(74, 74, 74);
+    transition: box-shadow 0.4s ease;
+  }
+  
+  .ProfileContentPSRow1B input:focus {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border: 1px solid rgb(74, 74, 74);
+    transition: box-shadow 0.4s ease;
+  }
+  .ProfileContentWSRow1B input:focus {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border: 1px solid rgb(74, 74, 74);
+    transition: box-shadow 0.4s ease;
+  }
+  .ProfileContentWSRow1A input:focus {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border: 1px solid rgb(74, 74, 74);
+    transition: box-shadow 0.4s ease;
+  }
+  .ProfileContentPwdSRow1B input:focus {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border: 1px solid rgb(74, 74, 74);
+    transition: box-shadow 0.4s ease;
+  }
+  .ProfileContentPwdSRow1A input:focus {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border: 1px solid rgb(74, 74, 74);
+    transition: box-shadow 0.4s ease;
+  }
+  
+  .ProfileContentPSRow1B input:default {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border: 1px solid rgb(23, 23, 23);
+    transition: box-shadow 0.5s ease;
+  }
+  .ProfileContentPSRow1A input:default{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border: 1px solid rgb(23, 23, 23);
+    transition: box-shadow 0.5s ease;
+  }
+  .ProfileContentWSRow1B input:default{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border: 1px solid rgb(23, 23, 23);
+    transition: box-shadow 0.5s ease;
+  }
+  .ProfileContentPwdSRow1B input:default{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border: 1px solid rgb(23, 23, 23);
+    transition: box-shadow 0.5s ease;
+  }
+  .ProfileContentPwdSRow1A input:default{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border: 1px solid rgb(23, 23, 23);
+    transition: box-shadow 0.5s ease;
+  }
+  
+  .ProfileContentPSRow3 textarea{
+    width: 100%;
+    height: 55px;
+    border: 1px solid #c5e6ef;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+    outline: none;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #8492a6;
+    padding-left: 20px;
+    padding-top: 10px;
+  }
+  
+  .ProfileContentPSRow3 textarea::placeholder{
+    color: #8492a6;
+  }
+  .ProfileContentPSRow3 textarea:focus {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border: 1px solid rgb(74, 74, 74);
+    transition: box-shadow 0.4s ease;
+  }
+  .ProfileContentPSRow3 textarea:default {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border: 1px solid rgb(23, 23, 23);
+    transition: box-shadow 0.5s ease;
+  }
+  
+  .ProfileContentPS input:read-only{
+    background: #ebf8fc;
+  
+  }
+  
+  .ProfileContentPSRow4Btn, .ProfileContentWSRow4Btn{
+    width: 100%;
+    height: 70px;
+  }
+  .ProfileContentPSRow4Btn button, .ProfileContentWSRow4Btn button, .ProfileContentPwdSRow4Btn button, .ProfileContentOSRow4Btn button{
+    padding: 15px 30px;
+    background: var(--swift-primary--);
+    outline: none;
+    border: none;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    cursor: pointer;
+  }
+  .ProfileContentPSRow4Btn button:hover, .ProfileContentWSRow4Btn  button:hover, .ProfileContentPwdSRow4Btn button:hover, .ProfileContentOSRow4Btn button:hover{
+    background: #157494;
+  }
+  
+  .AdvAccSettings {
+    width: max-content;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+  }
+  .AdvAccSettings span{
+    display: flex;
+    align-items: center;
+  }
+  
+  .ProfileContentOSRow1BInputHolder, .ProfileContentOSRow1AInputHolder{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+/* End of Media Query Styling for Mobile Device */
+
+
+/* Media Query Styling for Mobile Device */
+
+@media only screen and (max-width: 379px) {
+
+  .ProfileBody {
+    width: 100%;
+    height: max-content;
+    padding: 10px 10px;
+  }
+  
+  .ProfileBody h1 {
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 36.4px;
+    color: #fff;
+  }
+  
+  .ProfileContent {
+    width: 100%;
+    height: max-content;
+    padding: 20px 10px;
+    background: #fff;
+  }
+  
+  .ProfileNav {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    background: #ebf8fc;
+    flex-wrap: wrap;
+    font-size: 15px;
+  }
+  
+  .ProfileNav1,
+  .ProfileNav2,
+  .ProfileNav3,
+  .ProfileNav4 {
+    width: max-content;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 10px;
+    color: #8492a6;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .ProfileNav1:hover,
+  .ProfileNav2:hover,
+  .ProfileNav3:hover,
+  .ProfileNav4:hover {
+    color: rgb(30, 30, 30);
+  }
+  
+  .ProfileNav1.active,
+  .ProfileNav2.active,
+  .ProfileNav3.active,
+  .ProfileNav4.active {
+    color: #fff;
+    background: var(--swift-primary--);
+  }
+  
+  .ProfileMainContent {
+    width: 100%;
+    height: max-content;
+    padding: 15px 0px;
+  }
+  
+  .ProfileContentPS, .ProfileContentWS, .ProfileContentPwdS, .ProfileContentOS {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  
+  .ProfileContentPSRow1, .ProfileContentPSRow2, .ProfileContentPSRow3, .ProfileContentWSRow1, .ProfileContentWSRow2, .ProfileContentPwdSRow1, .ProfileContentPwdSRow2, .ProfileContentOSRow1 {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .ProfileContentWSRow3  {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .ProfileContentWSRow3 h4 {
+    font-size: 12.8px;
+    font-weight: 400;
+    line-height: 21.76px;
+    color: rgb(132, 146, 166);
+  }
+  
+  .ProfileContentPSRow1A, .ProfileContentWSRow1A, .ProfileContentPwdSRow1A, .ProfileContentOSRow1A {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+  
+  .ProfileContentPSRow1B, .ProfileContentWSRow1B, .ProfileContentPwdSRow1B, .ProfileContentOSRow1B {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .ProfileContentPSRow1A p,
+  .ProfileContentPSRow1B p, .ProfileContentWSRow1A p, .ProfileContentWSRow1B p, .ProfileContentPwdSRow1B p, .ProfileContentPwdSRow1A p, .ProfileContentOSRow1A p, .ProfileContentOSRow1B p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27.2px;
+    color: rgb(132, 146, 166);
+  }
+  
+  .ProfileContentPSRow1A input,
+  .ProfileContentPSRow1B input, .ProfileContentWSRow1A input,
+  .ProfileContentWSRow1B input, .ProfileContentPwdSRow1B input, .ProfileContentPwdSRow1A input {
+    width: 100%;
+    height: 55px;
+    border: 1px solid #c5e6ef;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+    outline: none;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #8492a6;
+    padding-left: 20px;
+  }
+  
+  .ProfileContentPSRow1A input::placeholder{
+    color: #8492a6;
+  }
+  .ProfileContentPSRow1B input::placeholder {
+    color: #8492a6;
+  }
+  .ProfileContentWSRow1B input::placeholder {
+    color: #8492a6;
+  }
+  .ProfileContentWSRow1A input::placeholder {
+    color: #8492a6;
+  }
+  .ProfileContentPwdSRow1B input::placeholder {
+    color: #8492a6;
+  }
+  .ProfileContentPwdSRow1A input::placeholder {
+    color: #8492a6;
+  }
+  
+  .ProfileContentPSRow1A input:focus {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border: 1px solid rgb(74, 74, 74);
+    transition: box-shadow 0.4s ease;
+  }
+  
+  .ProfileContentPSRow1B input:focus {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border: 1px solid rgb(74, 74, 74);
+    transition: box-shadow 0.4s ease;
+  }
+  .ProfileContentWSRow1B input:focus {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border: 1px solid rgb(74, 74, 74);
+    transition: box-shadow 0.4s ease;
+  }
+  .ProfileContentWSRow1A input:focus {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border: 1px solid rgb(74, 74, 74);
+    transition: box-shadow 0.4s ease;
+  }
+  .ProfileContentPwdSRow1B input:focus {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border: 1px solid rgb(74, 74, 74);
+    transition: box-shadow 0.4s ease;
+  }
+  .ProfileContentPwdSRow1A input:focus {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border: 1px solid rgb(74, 74, 74);
+    transition: box-shadow 0.4s ease;
+  }
+  
+  .ProfileContentPSRow1B input:default {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border: 1px solid rgb(23, 23, 23);
+    transition: box-shadow 0.5s ease;
+  }
+  .ProfileContentPSRow1A input:default{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border: 1px solid rgb(23, 23, 23);
+    transition: box-shadow 0.5s ease;
+  }
+  .ProfileContentWSRow1B input:default{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border: 1px solid rgb(23, 23, 23);
+    transition: box-shadow 0.5s ease;
+  }
+  .ProfileContentPwdSRow1B input:default{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border: 1px solid rgb(23, 23, 23);
+    transition: box-shadow 0.5s ease;
+  }
+  .ProfileContentPwdSRow1A input:default{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border: 1px solid rgb(23, 23, 23);
+    transition: box-shadow 0.5s ease;
+  }
+  
+  .ProfileContentPSRow3 textarea{
+    width: 100%;
+    height: 55px;
+    border: 1px solid #c5e6ef;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+    outline: none;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #8492a6;
+    padding-left: 20px;
+    padding-top: 10px;
+  }
+  
+  .ProfileContentPSRow3 textarea::placeholder{
+    color: #8492a6;
+  }
+  .ProfileContentPSRow3 textarea:focus {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border: 1px solid rgb(74, 74, 74);
+    transition: box-shadow 0.4s ease;
+  }
+  .ProfileContentPSRow3 textarea:default {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border: 1px solid rgb(23, 23, 23);
+    transition: box-shadow 0.5s ease;
+  }
+  
+  .ProfileContentPS input:read-only{
+    background: #ebf8fc;
+  
+  }
+  
+  .ProfileContentPSRow4Btn, .ProfileContentWSRow4Btn{
+    width: 100%;
+    height: 70px;
+  }
+  .ProfileContentPSRow4Btn button, .ProfileContentWSRow4Btn button, .ProfileContentPwdSRow4Btn button, .ProfileContentOSRow4Btn button{
+    padding: 15px 30px;
+    background: var(--swift-primary--);
+    outline: none;
+    border: none;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    cursor: pointer;
+  }
+  .ProfileContentPSRow4Btn button:hover, .ProfileContentWSRow4Btn  button:hover, .ProfileContentPwdSRow4Btn button:hover, .ProfileContentOSRow4Btn button:hover{
+    background: #157494;
+  }
+  
+  .AdvAccSettings {
+    width: max-content;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+  }
+  .AdvAccSettings span{
+    display: flex;
+    align-items: center;
+  }
+  
+  .ProfileContentOSRow1BInputHolder, .ProfileContentOSRow1AInputHolder{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+}
+
+/* End of Media Query Styling for Mobile Device */

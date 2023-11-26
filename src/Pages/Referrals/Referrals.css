@@ -1,0 +1,1112 @@
+/* 
+/* TEMPLATE FOR STYLINGS */
+
+/* Media Query Styling For Desktop Device */
+
+.ReferralBody{
+  width: 100%;
+  height: max-content;
+  padding: 0px 20px;
+}
+.ReferralBody h1{
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 36.4px;
+  color: #fff;
+}
+
+.ReferralContent{
+  width: 100%;
+  height: max-content;
+  padding: 40px 40px;
+  display: flex;
+  background: #fff;
+  border-radius: 5px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ReferralContentTop{
+  width: 70%;
+  height: max-content;
+}
+
+.ReferralContentTopInputndLabel{
+  width: 100%;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ReferralContentTopInputndLabel p{
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 27.2px;
+  color: rgb(132, 146, 166);
+}
+
+.ReferralContentTopReferUsDivBox{
+  width: 100%;
+  height: 55px;
+  display: flex;
+  margin-top: 5px;
+}
+.ReferralContentTopReferUsDivBox input{
+  width: 93%;
+  height: 100%;
+  border: 1px solid rgb(216, 216, 216);
+  outline: none;
+  padding-left: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #8492a6;
+  background: #ebf8fc;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  transition: box-shadow 0.4s ease;
+  transition: border 0.3s ease;
+}
+.ReferralContentTopReferUsDivBox input:focus{
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border: 1px solid rgb(219, 209, 209);
+  transition: box-shadow 0.4s ease;
+  
+}
+
+.ReferralContentTopReferUsDivBoxCopy{
+  width: 7%;
+  background: #fff;
+  color: #ebf8fc;
+  border: 1px solid #ebf8fc;
+  /* border-left: 0px; */
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.ReferralContentTopReferUsDivBoxCopy:hover{
+  background: #ebf8fc;
+  color: var(--swift-primary--);
+}
+
+.ReferralContentTopInfoBox{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+.ReferralContentTopInfoBox p{
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 27.2px;
+  color: rgb(132, 146, 166);
+}
+.ReferralContentTopInfoBox h5{
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 31.2px;
+  color: rgb(54, 179, 126);
+}
+.ReferralContentTopInfoBox h4{
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 26px;
+  color: rgb(60, 72, 88);
+}
+.ReferralContentTopInfoBox h6{
+  font-size: 12.8px;
+  font-weight: 400;
+  line-height: 21.76px;
+  color: rgb(132, 146, 166);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.ReferralContentTopInfoBox h6 .FaUser{
+  width: 30px;
+  height: 30px;
+}
+
+
+.ReferralContentDown{
+  width: 100%;
+  height: max-content;
+}
+.ReferralContentDown .MyYour{
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20.8px;
+  color: rgb(60, 72, 88);
+  margin-bottom: 10px;
+}
+
+.ReferralContentResult {
+  width: 100%;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.ReferralContentResultA {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ReferralContentResultALeft{
+  width: max-content;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgb(132, 146, 166)
+}
+.ReferralContentResultALeft select{
+  width: 80px;
+  height: 40px;
+  padding: 0 10px;
+  border: 1px solid #dbdbdb;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  outline: none;
+}
+.ReferralContentResultALeft select:active{
+  border: 1px solid #777777;
+  -webkit-box-shadow: inset 0 1px 2px rgba(31, 45, 61, 0.075);
+  box-shadow: inset 0 1px 2px rgba(31, 45, 61, 0.075);
+}
+
+.ReferralContentResultARight{
+  width: max-content;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgb(132, 146, 166);
+  gap: 5px;
+}
+.ReferralContentResultARight input{
+  width: 250px;
+  height: 35px;
+  border-radius: 5px;
+  border: 1px solid #dbdbdb;
+  padding: 0 10px;
+  transition: all 0.3s ease;
+  outline: none;
+}
+.ReferralContentResultARight input:focus{
+  border: 1px solid #888888;
+  -webkit-box-shadow: inset 0 1px 1px rgba(31, 45, 61, 0.075);
+  box-shadow: inset 0 1px 1px rgba(31, 45, 61, 0.075);
+}
+
+.ReferralContentResultB{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  box-shadow: rgba(40, 113, 121, 0.2) 0px 0px 5px;
+}
+
+.ReferralContentResultB1{
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 25px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 20.4px;
+  color: rgb(132, 146, 166);
+  cursor: pointer;
+}
+
+ .ReferralContentResultB2{
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 25px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 20.4px;
+  color: rgb(132, 146, 166);
+  cursor: pointer;
+}
+
+.ReferralContentResultB3{
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 25px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 20.4px;
+  color: rgb(132, 146, 166);
+  cursor: pointer;
+}
+.ReferralContentResultB4{
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 25px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 20.4px;
+  color: rgb(132, 146, 166);
+  cursor: pointer;
+}
+
+.ReferralContentResultB1W{
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 25px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 20.4px;
+  color: rgb(132, 146, 166);
+  cursor: pointer;
+}
+
+ .ReferralContentResultB2W{
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 25px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 20.4px;
+  color: rgb(132, 146, 166);
+  cursor: pointer;
+}
+
+.ReferralContentResultB3W{
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 25px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 20.4px;
+  color: rgb(132, 146, 166);
+  cursor: pointer;
+}
+.ReferralContentResultB4W{
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 25px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 20.4px;
+  color: rgb(132, 146, 166);
+  cursor: pointer;
+}
+
+.ReferralContentResultB1 span, .ReferralContentResultB2 span, .ReferralContentResultB3 span, .ReferralContentResultB4 span{
+  width: 25px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.ReferralContentResultC{
+  width: 100%;
+  height: max-content;
+}
+
+.ReferralContentResultCItem{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  /* justify-content: space-between; */
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 22.1px;
+  color: rgb(132, 146, 166);
+  transition: all 0.3s ease;
+}
+.ReferralContentResultCItem:hover{
+  background: #f0f8fa;
+}
+
+.ReferralContentResultC1{
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 25px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 20.4px;
+  color: rgb(132, 146, 166);
+  cursor: pointer;
+}
+
+ .ReferralContentResultC2{
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 25px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 20.4px;
+  color: rgb(132, 146, 166);
+  cursor: pointer;
+}
+
+.ReferralContentResultC3{
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 25px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 20.4px;
+  color: rgb(132, 146, 166);
+  cursor: pointer;
+}
+.ReferralContentResultC4{
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 25px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 20.4px;
+  color: rgb(132, 146, 166);
+  cursor: pointer;
+}
+.ReferralContentResultC5{
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 25px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 20.4px;
+  color: rgb(132, 146, 166);
+  cursor: pointer;
+}
+.ReferralContentResultC1W{
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 25px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 20.4px;
+  color: rgb(132, 146, 166);
+  cursor: pointer;
+}
+
+ .ReferralContentResultC2W{
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 25px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 20.4px;
+  color: rgb(132, 146, 166);
+  cursor: pointer;
+}
+
+.ReferralContentResultC3W{
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 25px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 20.4px;
+  color: rgb(132, 146, 166);
+  cursor: pointer;
+}
+.ReferralContentResultC4W{
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 25px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 20.4px;
+  color: rgb(132, 146, 166);
+  cursor: pointer;
+}
+.ReferralContentResultC3W span{
+  width: max-content;
+  height: max-content;
+  padding: 3px 8px;
+  background: #ff5630;
+  color: white;
+  border-radius: 5px;
+}
+
+.ReferralContentResultD{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ReferralContentResultDLeft{
+  display: flex;
+  align-items: end;
+  color: rgb(132, 146, 166);
+}
+
+.ReferralContentResultDRight{
+  display: flex;
+  align-items: end;
+  gap: 7px;
+  color: rgb(132, 146, 166);
+}
+
+.ReferralContentResultDRightBtn1, .ReferralContentResultDRightBtn3{
+  padding: 7px 13px;
+  background: none;
+  border-radius: 5px;
+  border: 1px solid #ebf8fc;
+}
+.ReferralContentResultDRightBtn2{
+  padding: 7px 13px;
+  background: var(--swift-primary--);
+  border-radius: 5px;
+  border: 1px solid #ebf8fc;
+  color: white;
+  cursor: pointer;
+}
+
+
+/* End of Media Query Styling For Desktop Device */
+
+/* Media Query Styling for Small Desktop  */
+
+@media only screen and (max-width: 1200px){
+
+
+
+}
+
+/* End of Media Query Styling for Tablet Device */
+
+
+/* Media Query Styling for Big Tablet Device */
+
+@media only screen and (max-width: 900px){
+
+
+
+}
+
+/* End of Media Query Styling for Tablet Device */
+/* Media Query Styling for Tablet Device */
+
+@media only screen and (max-width: 760px){
+
+
+
+}
+
+/* End of Media Query Styling for Tablet Device */
+
+/* Media Query Styling for Mobile Device */
+
+@media only screen and (max-width: 480px) {
+
+  .ReferralBody{
+    width: 100%;
+    height: max-content;
+    padding: 0px 20px;
+  }
+  .ReferralBody h1{
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 36.4px;
+    color: #fff;
+  }
+  
+  .ReferralContent{
+    width: 100%;
+    height: max-content;
+    padding: 30px 10px;
+    display: flex;
+    background: #fff;
+    border-radius: 5px;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .ReferralContentTop{
+    width: 80%;
+    height: max-content;
+  }
+  
+  .ReferralContentTopInputndLabel{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .ReferralContentTopInputndLabel p{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 27.2px;
+    color: rgb(132, 146, 166);
+    text-align: center;
+  }
+  
+  .ReferralContentTopReferUsDivBox{
+    width: 100%;
+    height: 55px;
+    display: flex;
+    margin-top: 5px;
+  }
+  .ReferralContentTopReferUsDivBox input{
+    width: 73%;
+    height: 100%;
+    border: 1px solid rgb(216, 216, 216);
+    outline: none;
+    padding-left: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #8492a6;
+    background: #ebf8fc;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    transition: box-shadow 0.4s ease;
+    transition: border 0.3s ease;
+  }
+  .ReferralContentTopReferUsDivBox input:focus{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border: 1px solid rgb(219, 209, 209);
+    transition: box-shadow 0.4s ease;
+    
+  }
+  
+  .ReferralContentTopReferUsDivBoxCopy{
+    width: 25%;
+    background: #fff;
+    color: #ebf8fc;
+    border: 1px solid #ebf8fc;
+    /* border-left: 0px; */
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    cursor: pointer;
+  }
+  
+  .ReferralContentTopReferUsDivBoxCopy:hover{
+    background: #ebf8fc;
+    color: var(--swift-primary--);
+  }
+  
+  .ReferralContentTopInfoBox{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  .ReferralContentTopInfoBox p{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 27.2px;
+    color: rgb(132, 146, 166);
+  }
+  .ReferralContentTopInfoBox h5{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 31.2px;
+    color: rgb(54, 179, 126);
+  }
+  .ReferralContentTopInfoBox h4{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 26px;
+    color: rgb(60, 72, 88);
+  }
+  .ReferralContentTopInfoBox h6{
+    font-size: 12.8px;
+    font-weight: 400;
+    line-height: 21.76px;
+    color: rgb(132, 146, 166);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .ReferralContentTopInfoBox h6 .FaUser{
+    width: 30px;
+    height: 30px;
+  }
+  
+  
+  .ReferralContentDown{
+    width: 100%;
+    height: max-content;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+    margin-left: 10px;
+  }
+  .ReferralContentDown .MyYour{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20.8px;
+    color: rgb(60, 72, 88);
+    margin-bottom: 10px;
+    padding-left: 30px;
+  }
+  
+  .ReferralContentResult {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .ReferralContentResultA {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .ReferralContentResultALeft{
+    width: max-content;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(132, 146, 166)
+  }
+  .ReferralContentResultALeft select{
+    width: 80px;
+    height: 40px;
+    padding: 0 10px;
+    border: 1px solid #dbdbdb;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    outline: none;
+  }
+  .ReferralContentResultALeft select:active{
+    border: 1px solid #777777;
+    -webkit-box-shadow: inset 0 1px 2px rgba(31, 45, 61, 0.075);
+    box-shadow: inset 0 1px 2px rgba(31, 45, 61, 0.075);
+  }
+  
+  .ReferralContentResultARight{
+    width: max-content;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(132, 146, 166);
+    gap: 5px;
+  }
+  .ReferralContentResultARight input{
+    width: 250px;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid #dbdbdb;
+    padding: 0 10px;
+    transition: all 0.3s ease;
+    outline: none;
+  }
+  .ReferralContentResultARight input:focus{
+    border: 1px solid #888888;
+    -webkit-box-shadow: inset 0 1px 1px rgba(31, 45, 61, 0.075);
+    box-shadow: inset 0 1px 1px rgba(31, 45, 61, 0.075);
+  }
+  
+  .ReferralContentResultB{
+    width: 200%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    box-shadow: rgba(40, 113, 121, 0.2) 0px 0px 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -10px;
+    margin-left: -10px;
+  }
+  
+  .ReferralContentResultB1{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 25px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20.4px;
+    color: rgb(132, 146, 166);
+    cursor: pointer;
+  }
+  
+   .ReferralContentResultB2{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 25px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20.4px;
+    color: rgb(132, 146, 166);
+    cursor: pointer;
+  }
+  
+  .ReferralContentResultB3{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 25px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20.4px;
+    color: rgb(132, 146, 166);
+    cursor: pointer;
+  }
+  .ReferralContentResultB4{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 25px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20.4px;
+    color: rgb(132, 146, 166);
+    cursor: pointer;
+  }
+  
+  .ReferralContentResultB1W{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 25px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20.4px;
+    color: rgb(132, 146, 166);
+    cursor: pointer;
+  }
+  
+   .ReferralContentResultB2W{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 25px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20.4px;
+    color: rgb(132, 146, 166);
+    cursor: pointer;
+  }
+  
+  .ReferralContentResultB3W{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 25px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20.4px;
+    color: rgb(132, 146, 166);
+    cursor: pointer;
+  }
+  .ReferralContentResultB4W{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 25px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20.4px;
+    color: rgb(132, 146, 166);
+    cursor: pointer;
+  }
+  
+  .ReferralContentResultB1 span, .ReferralContentResultB2 span, .ReferralContentResultB3 span, .ReferralContentResultB4 span{
+    width: 25px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .ReferralContentResultC{
+    width: 200%;
+    height: max-content;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -10px;
+    margin-left: -10px;
+  }
+  
+  .ReferralContentResultCItem{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    /* justify-content: space-between; */
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 22.1px;
+    color: rgb(132, 146, 166);
+    transition: all 0.3s ease;
+  }
+  .ReferralContentResultCItem:hover{
+    background: #f0f8fa;
+  }
+  
+  .ReferralContentResultC1{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 25px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20.4px;
+    color: rgb(132, 146, 166);
+    cursor: pointer;
+  }
+  
+   .ReferralContentResultC2{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20.4px;
+    color: rgb(132, 146, 166);
+    cursor: pointer;
+  }
+  
+  .ReferralContentResultC3{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20.4px;
+    color: rgb(132, 146, 166);
+    cursor: pointer;
+  }
+  .ReferralContentResultC4{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20.4px;
+    color: rgb(132, 146, 166);
+    cursor: pointer;
+  }
+  .ReferralContentResultC5{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20.4px;
+    color: rgb(132, 146, 166);
+    cursor: pointer;
+  }
+  .ReferralContentResultC1W{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 25px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20.4px;
+    color: rgb(132, 146, 166);
+    cursor: pointer;
+  }
+  
+   .ReferralContentResultC2W{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 25px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20.4px;
+    color: rgb(132, 146, 166);
+    cursor: pointer;
+  }
+  
+  .ReferralContentResultC3W{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 25px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20.4px;
+    color: rgb(132, 146, 166);
+    cursor: pointer;
+  }
+  .ReferralContentResultC4W{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 25px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20.4px;
+    color: rgb(132, 146, 166);
+    cursor: pointer;
+  }
+  .ReferralContentResultC3W span{
+    width: max-content;
+    height: max-content;
+    padding: 3px 8px;
+    background: #ff5630;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  .ReferralContentResultD{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .ReferralContentResultDLeft{
+    display: flex;
+    align-items: end;
+    color: rgb(132, 146, 166);
+  }
+  
+  .ReferralContentResultDRight{
+    display: flex;
+    align-items: end;
+    gap: 7px;
+    color: rgb(132, 146, 166);
+  }
+  
+  .ReferralContentResultDRightBtn1, .ReferralContentResultDRightBtn3{
+    padding: 7px 13px;
+    background: none;
+    border-radius: 5px;
+    border: 1px solid #ebf8fc;
+  }
+  .ReferralContentResultDRightBtn2{
+    padding: 7px 13px;
+    background: var(--swift-primary--);
+    border-radius: 5px;
+    border: 1px solid #ebf8fc;
+    color: white;
+    cursor: pointer;
+  }
+
+}
+
+/* End of Media Query Styling for Mobile Device */
+
+
+/* Media Query Styling for Mobile Device */
+
+@media only screen and (max-width: 351px) {
+
+
+}
+
+/* End of Media Query Styling for Mobile Device */ 
+
+

@@ -1,0 +1,1400 @@
+/* 
+/* TEMPLATE FOR STYLINGS */
+
+/* Media Query Styling For Desktop Device */
+
+.TransactionsBody {
+  width: 100%;
+  height: max-content;
+  padding: 0px 10px;
+}
+
+.TransactionsBody h1 {
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 36.4px;
+  color: #fff;
+}
+
+.TransactionContent {
+  width: 100%;
+  height: max-content;
+  background: #fff;
+  border-radius: 7px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.TransactionContentNav {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.TransactionContentNav1.active,
+.TransactionContentNav2.active,
+.TransactionContentNav3.active {
+  width: 32%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  background: var(--swift-primary--);
+  color: #fff;
+  border-radius: 5px;
+  padding: 15px 0;
+  cursor: pointer;
+}
+
+.TransactionContentNav1,
+.TransactionContentNav2,
+.TransactionContentNav3 {
+  width: 32%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  background: #ebf8fc;
+  color: #8492a6;
+  border-radius: 5px;
+  padding: 15px 0;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.TransactionContentNav1:hover,
+.TransactionContentNav2:hover,
+.TransactionContentNav3:hover {
+  color: var(--swift-primary--);
+}
+
+.TransactionContentNav1.active:hover,
+.TransactionContentNav2.active:hover,
+.TransactionContentNav3.active:hover {
+  color: #fff;
+}
+
+.TransactionContentResult {
+  width: 100%;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.TransactionContentResultA {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.TransactionContentResultALeft{
+  width: max-content;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgb(132, 146, 166)
+}
+.TransactionContentResultALeft select{
+  width: 80px;
+  height: 40px;
+  padding: 0 10px;
+  border: 1px solid #dbdbdb;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  outline: none;
+}
+.TransactionContentResultALeft select:active{
+  border: 1px solid #777777;
+  -webkit-box-shadow: inset 0 1px 2px rgba(31, 45, 61, 0.075);
+  box-shadow: inset 0 1px 2px rgba(31, 45, 61, 0.075);
+}
+
+.TransactionContentResultARight{
+  width: max-content;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgb(132, 146, 166);
+  gap: 5px;
+}
+.TransactionContentResultARight input{
+  width: 250px;
+  height: 35px;
+  border-radius: 5px;
+  border: 1px solid #dbdbdb;
+  padding: 0 10px;
+  transition: all 0.3s ease;
+  outline: none;
+}
+.TransactionContentResultARight input:focus{
+  border: 1px solid #888888;
+  -webkit-box-shadow: inset 0 1px 1px rgba(31, 45, 61, 0.075);
+  box-shadow: inset 0 1px 1px rgba(31, 45, 61, 0.075);
+}
+
+.TransactionContentResultB{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  box-shadow: rgba(40, 113, 121, 0.2) 0px 0px 5px;
+}
+
+.TransactionContentResultB1{
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 25px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 20.4px;
+  color: rgb(132, 146, 166);
+  cursor: pointer;
+}
+
+ .TransactionContentResultB2{
+  width: 27%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 25px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 20.4px;
+  color: rgb(132, 146, 166);
+  cursor: pointer;
+}
+
+.TransactionContentResultB3{
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 25px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 20.4px;
+  color: rgb(132, 146, 166);
+  cursor: pointer;
+}
+.TransactionContentResultB4{
+  width: 33%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 25px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 20.4px;
+  color: rgb(132, 146, 166);
+  cursor: pointer;
+}
+.TransactionContentResultB1W{
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 25px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 20.4px;
+  color: rgb(132, 146, 166);
+  cursor: pointer;
+}
+
+ .TransactionContentResultB2W{
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 25px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 20.4px;
+  color: rgb(132, 146, 166);
+  cursor: pointer;
+}
+
+.TransactionContentResultB3W{
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 25px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 20.4px;
+  color: rgb(132, 146, 166);
+  cursor: pointer;
+}
+.TransactionContentResultB4W{
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 25px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 20.4px;
+  color: rgb(132, 146, 166);
+  cursor: pointer;
+}
+
+.TransactionContentResultB1 span, .TransactionContentResultB2 span, .TransactionContentResultB3 span, .TransactionContentResultB4 span{
+  width: 25px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.TransactionContentResultC{
+  width: 100%;
+  height: max-content;
+}
+
+.TransactionContentResultCItem{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 22.1px;
+  color: rgb(132, 146, 166);
+  transition: all 0.3s ease;
+}
+.TransactionContentResultCItem:hover{
+  background: #f0f8fa;
+}
+
+.TransactionContentResultC1{
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 25px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 20.4px;
+  color: rgb(132, 146, 166);
+  cursor: pointer;
+}
+
+ .TransactionContentResultC2{
+  width: 27%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 25px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 20.4px;
+  color: rgb(132, 146, 166);
+  cursor: pointer;
+}
+
+.TransactionContentResultC3{
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 25px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 20.4px;
+  color: rgb(132, 146, 166);
+  cursor: pointer;
+}
+.TransactionContentResultC4{
+  width: 33%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 25px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 20.4px;
+  color: rgb(132, 146, 166);
+  cursor: pointer;
+}
+.TransactionContentResultC1W{
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 25px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 20.4px;
+  color: rgb(132, 146, 166);
+  cursor: pointer;
+}
+
+ .TransactionContentResultC2W{
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 25px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 20.4px;
+  color: rgb(132, 146, 166);
+  cursor: pointer;
+}
+
+.TransactionContentResultC3W{
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 25px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 20.4px;
+  color: rgb(132, 146, 166);
+  cursor: pointer;
+}
+.TransactionContentResultC4W{
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 25px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 20.4px;
+  color: rgb(132, 146, 166);
+  cursor: pointer;
+}
+.TransactionContentResultC3W span{
+  width: max-content;
+  height: max-content;
+  padding: 3px 8px;
+  background: #ff5630;
+  color: white;
+  border-radius: 5px;
+}
+
+.TransactionContentResultD{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.TransactionContentResultDLeft{
+  display: flex;
+  align-items: end;
+  color: rgb(132, 146, 166);
+}
+
+.TransactionContentResultDRight{
+  display: flex;
+  align-items: end;
+  gap: 7px;
+  color: rgb(132, 146, 166);
+}
+
+.TransactionContentResultDRightBtn1, .TransactionContentResultDRightBtn3{
+  padding: 7px 13px;
+  background: none;
+  border-radius: 5px;
+  border: 1px solid #ebf8fc;
+}
+.TransactionContentResultDRightBtn2{
+  padding: 7px 13px;
+  background: var(--swift-primary--);
+  border-radius: 5px;
+  border: 1px solid #ebf8fc;
+  color: white;
+  cursor: pointer;
+}
+
+
+
+/* End of Media Query Styling For Desktop Device */
+
+/* Media Query Styling for Small Desktop  */
+
+@media only screen and (max-width: 1200px) {}
+
+/* End of Media Query Styling for Tablet Device */
+
+
+/* Media Query Styling for Big Tablet Device */
+
+@media only screen and (max-width: 900px) {}
+
+/* End of Media Query Styling for Tablet Device */
+/* Media Query Styling for Tablet Device */
+
+@media only screen and (max-width: 760px) {}
+
+/* End of Media Query Styling for Tablet Device */
+
+/* Media Query Styling for Mobile Device */
+
+@media only screen and (max-width: 480px) {
+  .TransactionsBody {
+    width: 100%;
+    height: max-content;
+    padding: 0px 10px;
+  }
+  
+  .TransactionsBody h1 {
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 36.4px;
+    color: #fff;
+  }
+  
+  .TransactionContent {
+    width: 100%;
+    height: max-content;
+    background: #fff;
+    border-radius: 7px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .TransactionContentNav {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .TransactionContentNav p{
+    display: none;
+  }
+  
+  .TransactionContentNav1.active,
+  .TransactionContentNav2.active,
+  .TransactionContentNav3.active {
+    width: 32%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: var(--swift-primary--);
+    color: #fff;
+    border-radius: 5px;
+    padding: 15px 0;
+    cursor: pointer;
+  }
+  
+  .TransactionContentNav1,
+  .TransactionContentNav2,
+  .TransactionContentNav3 {
+    width: 32%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #ebf8fc;
+    color: #8492a6;
+    border-radius: 5px;
+    padding: 15px 0;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .TransactionContentNav1:hover,
+  .TransactionContentNav2:hover,
+  .TransactionContentNav3:hover {
+    color: var(--swift-primary--);
+  }
+  
+  .TransactionContentNav1.active:hover,
+  .TransactionContentNav2.active:hover,
+  .TransactionContentNav3.active:hover {
+    color: #fff;
+  }
+  
+  .TransactionContentResult {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: all 0.3s ease-in-out;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .TransactionContentResultA {
+    width: 100%;
+    height:100px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .TransactionContentResultALeft{
+    width: max-content;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(132, 146, 166)
+  }
+  .TransactionContentResultALeft select{
+    width: 80px;
+    height: 40px;
+    padding: 0 10px;
+    border: 1px solid #dbdbdb;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    outline: none;
+  }
+  .TransactionContentResultALeft select:active{
+    border: 1px solid #777777;
+    -webkit-box-shadow: inset 0 1px 2px rgba(31, 45, 61, 0.075);
+    box-shadow: inset 0 1px 2px rgba(31, 45, 61, 0.075);
+  }
+  
+  .TransactionContentResultARight{
+    width: max-content;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(132, 146, 166);
+    gap: 5px;
+  }
+  .TransactionContentResultARight input{
+    width: 250px;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid #dbdbdb;
+    padding: 0 10px;
+    transition: all 0.3s ease;
+    outline: none;
+  }
+  .TransactionContentResultARight input:focus{
+    border: 1px solid #888888;
+    -webkit-box-shadow: inset 0 1px 1px rgba(31, 45, 61, 0.075);
+    box-shadow: inset 0 1px 1px rgba(31, 45, 61, 0.075);
+  }
+  
+  .TransactionContentResultB{
+    width: 200%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    box-shadow: rgba(40, 113, 121, 0.2) 0px 0px 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -10px;
+    margin-left: -10px;
+  }
+  
+  .TransactionContentResultB1{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 25px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20.4px;
+    color: rgb(132, 146, 166);
+    cursor: pointer;
+  }
+  
+   .TransactionContentResultB2{
+    width: 27%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 25px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20.4px;
+    color: rgb(132, 146, 166);
+    cursor: pointer;
+  }
+  
+  .TransactionContentResultB3{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 25px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20.4px;
+    color: rgb(132, 146, 166);
+    cursor: pointer;
+  }
+  .TransactionContentResultB4{
+    width: 33%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 25px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20.4px;
+    color: rgb(132, 146, 166);
+    cursor: pointer;
+  }
+  .TransactionContentResultB1W{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 25px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20.4px;
+    color: rgb(132, 146, 166);
+    cursor: pointer;
+  }
+  
+   .TransactionContentResultB2W{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 25px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20.4px;
+    color: rgb(132, 146, 166);
+    cursor: pointer;
+  }
+  
+  .TransactionContentResultB3W{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 25px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20.4px;
+    color: rgb(132, 146, 166);
+    cursor: pointer;
+  }
+  .TransactionContentResultB4W{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 25px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20.4px;
+    color: rgb(132, 146, 166);
+    cursor: pointer;
+  }
+  
+  .TransactionContentResultB1 span, .TransactionContentResultB2 span, .TransactionContentResultB3 span, .TransactionContentResultB4 span{
+    width: 25px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .TransactionContentResultC{
+    width: 200%;
+    height: max-content;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -10px;
+    margin-left: -10px;
+  }
+  
+  .TransactionContentResultCItem{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 22.1px;
+    color: rgb(132, 146, 166);
+    transition: all 0.3s ease;
+  }
+  .TransactionContentResultCItem:hover{
+    background: #f0f8fa;
+  }
+  
+  .TransactionContentResultC1{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 25px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20.4px;
+    color: rgb(132, 146, 166);
+    cursor: pointer;
+  }
+  
+   .TransactionContentResultC2{
+    width: 27%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 25px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20.4px;
+    color: rgb(132, 146, 166);
+    cursor: pointer;
+  }
+  
+  .TransactionContentResultC3{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 25px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20.4px;
+    color: rgb(132, 146, 166);
+    cursor: pointer;
+  }
+  .TransactionContentResultC4{
+    width: 33%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 25px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20.4px;
+    color: rgb(132, 146, 166);
+    cursor: pointer;
+  }
+  .TransactionContentResultC1W{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 25px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20.4px;
+    color: rgb(132, 146, 166);
+    cursor: pointer;
+  }
+  
+   .TransactionContentResultC2W{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 25px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20.4px;
+    color: rgb(132, 146, 166);
+    cursor: pointer;
+  }
+  
+  .TransactionContentResultC3W{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 25px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20.4px;
+    color: rgb(132, 146, 166);
+    cursor: pointer;
+  }
+  .TransactionContentResultC4W{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 25px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20.4px;
+    color: rgb(132, 146, 166);
+    cursor: pointer;
+  }
+  .TransactionContentResultC3W span{
+    width: max-content;
+    height: max-content;
+    padding: 3px 8px;
+    background: #ff5630;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  .TransactionContentResultD{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .TransactionContentResultDLeft{
+    display: flex;
+    align-items: end;
+    color: rgb(132, 146, 166);
+  }
+  
+  .TransactionContentResultDRight{
+    display: flex;
+    align-items: end;
+    gap: 7px;
+    color: rgb(132, 146, 166);
+  }
+  
+  .TransactionContentResultDRightBtn1, .TransactionContentResultDRightBtn3{
+    padding: 7px 13px;
+    background: none;
+    border-radius: 5px;
+    border: 1px solid #ebf8fc;
+  }
+  .TransactionContentResultDRightBtn2{
+    padding: 7px 13px;
+    background: var(--swift-primary--);
+    border-radius: 5px;
+    border: 1px solid #ebf8fc;
+    color: white;
+    cursor: pointer;
+  }
+}
+
+/* End of Media Query Styling for Mobile Device */
+
+
+/* Media Query Styling for Mobile Device */
+
+@media only screen and (max-width: 379px) {
+
+  .TransactionsBody {
+    width: 100%;
+    height: max-content;
+    padding: 0px 10px;
+  }
+  
+  .TransactionsBody h1 {
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 36.4px;
+    color: #fff;
+  }
+  
+  .TransactionContent {
+    width: 100%;
+    height: max-content;
+    background: #fff;
+    border-radius: 7px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .TransactionContentNav {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .TransactionContentNav p{
+    display: none;
+  }
+  
+  .TransactionContentNav1.active,
+  .TransactionContentNav2.active,
+  .TransactionContentNav3.active {
+    width: 32%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: var(--swift-primary--);
+    color: #fff;
+    border-radius: 5px;
+    padding: 15px 0;
+    cursor: pointer;
+  }
+  
+  .TransactionContentNav1,
+  .TransactionContentNav2,
+  .TransactionContentNav3 {
+    width: 32%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #ebf8fc;
+    color: #8492a6;
+    border-radius: 5px;
+    padding: 15px 0;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .TransactionContentNav1:hover,
+  .TransactionContentNav2:hover,
+  .TransactionContentNav3:hover {
+    color: var(--swift-primary--);
+  }
+  
+  .TransactionContentNav1.active:hover,
+  .TransactionContentNav2.active:hover,
+  .TransactionContentNav3.active:hover {
+    color: #fff;
+  }
+  
+  .TransactionContentResult {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: all 0.3s ease-in-out;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .TransactionContentResultA {
+    width: 100%;
+    height:100px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .TransactionContentResultALeft{
+    width: max-content;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(132, 146, 166)
+  }
+  .TransactionContentResultALeft select{
+    width: 80px;
+    height: 40px;
+    padding: 0 10px;
+    border: 1px solid #dbdbdb;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    outline: none;
+  }
+  .TransactionContentResultALeft select:active{
+    border: 1px solid #777777;
+    -webkit-box-shadow: inset 0 1px 2px rgba(31, 45, 61, 0.075);
+    box-shadow: inset 0 1px 2px rgba(31, 45, 61, 0.075);
+  }
+  
+  .TransactionContentResultARight{
+    width: max-content;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(132, 146, 166);
+    gap: 5px;
+  }
+  .TransactionContentResultARight input{
+    width: 250px;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid #dbdbdb;
+    padding: 0 10px;
+    transition: all 0.3s ease;
+    outline: none;
+  }
+  .TransactionContentResultARight input:focus{
+    border: 1px solid #888888;
+    -webkit-box-shadow: inset 0 1px 1px rgba(31, 45, 61, 0.075);
+    box-shadow: inset 0 1px 1px rgba(31, 45, 61, 0.075);
+  }
+  
+  .TransactionContentResultB{
+    width: 200%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    box-shadow: rgba(40, 113, 121, 0.2) 0px 0px 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -10px;
+    margin-left: -10px;
+  }
+  
+  .TransactionContentResultB1{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 25px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20.4px;
+    color: rgb(132, 146, 166);
+    cursor: pointer;
+  }
+  
+   .TransactionContentResultB2{
+    width: 27%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 25px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20.4px;
+    color: rgb(132, 146, 166);
+    cursor: pointer;
+  }
+  
+  .TransactionContentResultB3{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 25px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20.4px;
+    color: rgb(132, 146, 166);
+    cursor: pointer;
+  }
+  .TransactionContentResultB4{
+    width: 33%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 25px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20.4px;
+    color: rgb(132, 146, 166);
+    cursor: pointer;
+  }
+  .TransactionContentResultB1W{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 25px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20.4px;
+    color: rgb(132, 146, 166);
+    cursor: pointer;
+  }
+  
+   .TransactionContentResultB2W{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 25px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20.4px;
+    color: rgb(132, 146, 166);
+    cursor: pointer;
+  }
+  
+  .TransactionContentResultB3W{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 25px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20.4px;
+    color: rgb(132, 146, 166);
+    cursor: pointer;
+  }
+  .TransactionContentResultB4W{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 25px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20.4px;
+    color: rgb(132, 146, 166);
+    cursor: pointer;
+  }
+  
+  .TransactionContentResultB1 span, .TransactionContentResultB2 span, .TransactionContentResultB3 span, .TransactionContentResultB4 span{
+    width: 25px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .TransactionContentResultC{
+    width: 200%;
+    height: max-content;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -10px;
+    margin-left: -10px;
+  }
+  
+  .TransactionContentResultCItem{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 22.1px;
+    color: rgb(132, 146, 166);
+    transition: all 0.3s ease;
+  }
+  .TransactionContentResultCItem:hover{
+    background: #f0f8fa;
+  }
+  
+  .TransactionContentResultC1{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 25px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20.4px;
+    color: rgb(132, 146, 166);
+    cursor: pointer;
+  }
+  
+   .TransactionContentResultC2{
+    width: 27%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 25px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20.4px;
+    color: rgb(132, 146, 166);
+    cursor: pointer;
+  }
+  
+  .TransactionContentResultC3{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 25px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20.4px;
+    color: rgb(132, 146, 166);
+    cursor: pointer;
+  }
+  .TransactionContentResultC4{
+    width: 33%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 25px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20.4px;
+    color: rgb(132, 146, 166);
+    cursor: pointer;
+  }
+  .TransactionContentResultC1W{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 25px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20.4px;
+    color: rgb(132, 146, 166);
+    cursor: pointer;
+  }
+  
+   .TransactionContentResultC2W{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 25px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20.4px;
+    color: rgb(132, 146, 166);
+    cursor: pointer;
+  }
+  
+  .TransactionContentResultC3W{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 25px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20.4px;
+    color: rgb(132, 146, 166);
+    cursor: pointer;
+  }
+  .TransactionContentResultC4W{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 25px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20.4px;
+    color: rgb(132, 146, 166);
+    cursor: pointer;
+  }
+  .TransactionContentResultC3W span{
+    width: max-content;
+    height: max-content;
+    padding: 3px 8px;
+    background: #ff5630;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  .TransactionContentResultD{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .TransactionContentResultDLeft{
+    display: flex;
+    align-items: end;
+    color: rgb(132, 146, 166);
+  }
+  
+  .TransactionContentResultDRight{
+    display: flex;
+    align-items: end;
+    gap: 7px;
+    color: rgb(132, 146, 166);
+  }
+  
+  .TransactionContentResultDRightBtn1, .TransactionContentResultDRightBtn3{
+    padding: 7px 13px;
+    background: none;
+    border-radius: 5px;
+    border: 1px solid #ebf8fc;
+  }
+  .TransactionContentResultDRightBtn2{
+    padding: 7px 13px;
+    background: var(--swift-primary--);
+    border-radius: 5px;
+    border: 1px solid #ebf8fc;
+    color: white;
+    cursor: pointer;
+  }
+
+}
+
+/* End of Media Query Styling for Mobile Device */

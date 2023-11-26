@@ -1,0 +1,580 @@
+/* 
+/* TEMPLATE FOR STYLINGS */
+
+/* Media Query Styling For Desktop Device */
+
+.WithdrawFundsBody{
+  width: 100%;
+  height: max-content;
+  padding: 0px 30px;
+}
+.WithdrawFundsBody .WithdrawFundsBodyHeaderText{
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 36.4px;
+  color: #fff;
+}
+
+.WithdrawFundsContent{
+  width: 100%;
+  height: 100vh;
+  background: #fff;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.WithdrawFundsContentBox{
+  width: 65%;
+  height: 80%;
+  -webkit-box-shadow: 0 0.75rem 1.5rem rgba(18, 38, 63, 0.03);
+  box-shadow: 0 0.75rem 1.5rem rgba(18, 38, 63, 0.03);
+  margin-top: 35px;
+  border: 1px solid #ebf8fc;
+  padding: 40px 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.WithdrawFundsContentBox1{
+  width: 100%;
+  height: 40px;
+}
+
+.WithdrawFundsContentBox1Method{
+  width: max-content;
+  height: 38px;
+  background: #d7f0e5;
+  border-radius: 40px;
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 23.8;
+  color: rgb(43, 115, 95);
+}
+.WithdrawFundsContentBox1Method p{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-right: 5px;
+}
+.WithdrawFundsContentBox1Method div{
+  width: max-content;
+  height: 25px;
+  background: #36b37e;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+  font-size: 11.2px;
+  font-weight: 700;
+  line-height: 11.2;
+  color: #fff;
+}
+
+.WithdrawFundsContentBox2{
+  width: 100%;
+  height: max-content;
+}
+.WithdrawFundsContentBox2 p{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27.7px;
+  color: rgb(132, 146, 166);
+}
+
+.WithdrawFundsContentBox2 input{
+  width: 100%;
+  height: 50px;
+  padding: 0px 20px;
+  border: 1px solid rgb(216, 216, 216);
+  border-radius: 5px; 
+  transition: box-shadow 0.4s ease;
+  transition: border 0.3s ease;
+  outline: none;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #8492a6;
+}
+.WithdrawFundsContentBox2 input::placeholder{
+  color: #8492a6;;
+}
+.WithdrawFundsContentBox2 input:focus{
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border: 1px solid rgb(74, 74, 74);
+  transition: box-shadow 0.4s ease;
+}
+.WithdrawFundsContentBox2 input:default{
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border: 1px solid rgb(23, 23, 23);
+  transition: box-shadow 0.5s ease;
+}
+
+.WithdrawFundsContentBox3{
+  width: 100%;
+  height: max-content;
+}
+
+.WithdrawFundsContentBox3A{
+  width: 100%;
+  height: 45px;
+  display: flex;
+  justify-content: space-between;
+  /* background: #000; */
+}
+.WithdrawFundsContentBox3A p{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27.2px;
+  color: rgb(132, 146, 166);
+}
+.WithdrawFundsContentBox3A button{
+  width: max-content;
+  height: 40px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  background: var(--swift-primary--);
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.WithdrawFundsContentBox3A button span{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.WithdrawFundsContentBox3B{
+  width: 100%;
+  height: 60px;
+}
+
+.WithdrawFundsContentBox3B input{
+  width: 100%;
+  height: 50px;
+  padding: 0px 20px;
+  border: 1px solid rgb(216, 216, 216);
+  border-radius: 5px; 
+  transition: box-shadow 0.4s ease;
+  transition: border 0.3s ease;
+  outline: none;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.WithdrawFundsContentBox3B input::placeholder{
+  color: #8492a6;;
+}
+.WithdrawFundsContentBox3B input:focus{
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border: 1px solid rgb(74, 74, 74);
+  transition: box-shadow 0.4s ease;
+}
+.WithdrawFundsContentBox3B input:default{
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border: 1px solid rgb(23, 23, 23);
+  transition: box-shadow 0.5s ease;
+}
+.WithdrawFundsContentBox3B p{
+  font-size: 12.8px;
+  line-height: 21.76px;
+  font-weight: 400;
+  color: rgb(132, 146, 166);
+}
+
+.WithdrawFundsContentBox4{
+  width: 100%;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+.WithdrawFundsContentBox4 h3{
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 26px;
+  color: rgb(60, 72, 88);
+}
+.WithdrawFundsContentBox4 input{
+  width: 100%;
+  height: 50px;
+  padding: 0px 20px;
+  border: 1px solid rgb(216, 216, 216);
+  border-radius: 5px; 
+  transition: box-shadow 0.4s ease;
+  transition: border 0.3s ease;
+  outline: none;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.WithdrawFundsContentBox4 input::placeholder{
+  color: #8492a6;;
+}
+.WithdrawFundsContentBox4 input:focus{
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border: 1px solid rgb(74, 74, 74);
+  transition: box-shadow 0.4s ease;
+}
+.WithdrawFundsContentBox4 input:default{
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border: 1px solid rgb(23, 23, 23);
+  transition: box-shadow 0.5s ease;
+}
+.WithdrawFundsContentBox4 p{
+  font-size: 12.8px;
+  line-height: 21.76px;
+  font-weight: 400;
+  color: rgb(132, 146, 166);
+  margin-top: 5px;
+}
+
+.WithdrawFundsContentBox5{
+  width: 100%;
+  height: 70px;
+}
+
+.WithdrawFundsContentBox5 button{
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  color: #fff;
+  background: var(--swift-primary--);
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+
+
+
+
+/* End of Media Query Styling For Desktop Device */
+
+/* Media Query Styling for Small Desktop  */
+
+@media only screen and (max-width: 1200px){
+
+
+
+}
+
+/* End of Media Query Styling for Tablet Device */
+
+
+/* Media Query Styling for Big Tablet Device */
+
+@media only screen and (max-width: 900px){
+
+
+
+}
+
+/* End of Media Query Styling for Tablet Device */
+/* Media Query Styling for Tablet Device */
+
+@media only screen and (max-width: 760px){
+
+
+
+}
+
+/* End of Media Query Styling for Tablet Device */
+
+/* Media Query Styling for Mobile Device */
+
+@media only screen and (max-width: 480px) {
+
+  .WithdrawFundsBody{
+    width: 100%;
+    height: max-content;
+    padding: 0px 10px;
+  }
+  .WithdrawFundsBody .WithdrawFundsBodyHeaderText{
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 36.4px;
+    color: #fff;
+  }
+  
+  .WithdrawFundsContent{
+    width: 100%;
+    height: 80vh;
+    background: #fff;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+  }
+  
+  .WithdrawFundsContentBox{
+    width: 100%;
+    height: 100%;
+    -webkit-box-shadow: 0 0.75rem 1.5rem rgba(18, 38, 63, 0.03);
+    box-shadow: 0 0.75rem 1.5rem rgba(18, 38, 63, 0.03);
+    margin-top: 35px;
+    border: 1px solid #ebf8fc;
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .WithdrawFundsContentBox1{
+    width: 100%;
+    height: 40px;
+  }
+  
+  .WithdrawFundsContentBox1Method{
+    width: max-content;
+    height: 38px;
+    background: #d7f0e5;
+    border-radius: 40px;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 23.8;
+    color: rgb(43, 115, 95);
+  }
+  .WithdrawFundsContentBox1Method p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-right: 5px;
+  }
+  .WithdrawFundsContentBox1Method div{
+    width: max-content;
+    height: 25px;
+    background: #36b37e;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    font-size: 11.2px;
+    font-weight: 700;
+    line-height: 11.2;
+    color: #fff;
+  }
+  
+  .WithdrawFundsContentBox2{
+    width: 100%;
+    height: max-content;
+  }
+  .WithdrawFundsContentBox2 p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27.7px;
+    color: rgb(132, 146, 166);
+  }
+  
+  .WithdrawFundsContentBox2 input{
+    width: 100%;
+    height: 50px;
+    padding: 0px 20px;
+    border: 1px solid rgb(216, 216, 216);
+    border-radius: 5px; 
+    transition: box-shadow 0.4s ease;
+    transition: border 0.3s ease;
+    outline: none;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #8492a6;
+  }
+  .WithdrawFundsContentBox2 input::placeholder{
+    color: #8492a6;;
+  }
+  .WithdrawFundsContentBox2 input:focus{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border: 1px solid rgb(74, 74, 74);
+    transition: box-shadow 0.4s ease;
+  }
+  .WithdrawFundsContentBox2 input:default{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border: 1px solid rgb(23, 23, 23);
+    transition: box-shadow 0.5s ease;
+  }
+  
+  .WithdrawFundsContentBox3{
+    width: 100%;
+    height: max-content;
+  }
+  
+  .WithdrawFundsContentBox3A{
+    width: 100%;
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    /* background: #000; */
+  }
+  .WithdrawFundsContentBox3A p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27.2px;
+    color: rgb(132, 146, 166);
+  }
+  .WithdrawFundsContentBox3A button{
+    width: max-content;
+    height: 40px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    background: var(--swift-primary--);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .WithdrawFundsContentBox3A button span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+  }
+  
+  .WithdrawFundsContentBox3B{
+    width: 100%;
+    height: 60px;
+  }
+  
+  .WithdrawFundsContentBox3B input{
+    width: 100%;
+    height: 50px;
+    padding: 0px 20px;
+    border: 1px solid rgb(216, 216, 216);
+    border-radius: 5px; 
+    transition: box-shadow 0.4s ease;
+    transition: border 0.3s ease;
+    outline: none;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  .WithdrawFundsContentBox3B input::placeholder{
+    color: #8492a6;;
+  }
+  .WithdrawFundsContentBox3B input:focus{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border: 1px solid rgb(74, 74, 74);
+    transition: box-shadow 0.4s ease;
+  }
+  .WithdrawFundsContentBox3B input:default{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border: 1px solid rgb(23, 23, 23);
+    transition: box-shadow 0.5s ease;
+  }
+  .WithdrawFundsContentBox3B p{
+    font-size: 12.8px;
+    line-height: 21.76px;
+    font-weight: 400;
+    color: rgb(132, 146, 166);
+  }
+  
+  .WithdrawFundsContentBox4{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  .WithdrawFundsContentBox4 h3{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 26px;
+    color: rgb(60, 72, 88);
+  }
+  .WithdrawFundsContentBox4 input{
+    width: 100%;
+    height: 50px;
+    padding: 0px 20px;
+    border: 1px solid rgb(216, 216, 216);
+    border-radius: 5px; 
+    transition: box-shadow 0.4s ease;
+    transition: border 0.3s ease;
+    outline: none;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  .WithdrawFundsContentBox4 input::placeholder{
+    color: #8492a6;;
+  }
+  .WithdrawFundsContentBox4 input:focus{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border: 1px solid rgb(74, 74, 74);
+    transition: box-shadow 0.4s ease;
+  }
+  .WithdrawFundsContentBox4 input:default{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border: 1px solid rgb(23, 23, 23);
+    transition: box-shadow 0.5s ease;
+  }
+  .WithdrawFundsContentBox4 p{
+    font-size: 12.8px;
+    line-height: 21.76px;
+    font-weight: 400;
+    color: rgb(132, 146, 166);
+    margin-top: 5px;
+  }
+  
+  .WithdrawFundsContentBox5{
+    width: 100%;
+    height: 70px;
+  }
+  
+  .WithdrawFundsContentBox5 button{
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #fff;
+    background: var(--swift-primary--);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+  }
+
+}
+
+/* End of Media Query Styling for Mobile Device */
+
+
+/* Media Query Styling for Mobile Device */
+
+@media only screen and (max-width: 351px) {
+
+
+}
+
+/* End of Media Query Styling for Mobile Device */ 

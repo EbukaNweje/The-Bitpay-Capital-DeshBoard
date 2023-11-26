@@ -1,0 +1,1610 @@
+/* 
+/* TEMPLATE FOR STYLINGS */
+
+/* Media Query Styling For Desktop Device */
+
+.LoginBody{
+  width: 100%;
+  height: 100vh;
+  background: var(--swift-secondary--);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.LoginContainer{
+  width: 73%;
+  height: 85%;
+  background: #fff;
+  display: flex;
+  border-radius: 7px;
+  border: 1px solid #eeeeee;
+}
+
+.LoginRight{
+  width: 57%;
+  height: 100%;
+  padding: 25px 0px 25px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.LoginTitle{
+  width: 100%;
+  height: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.LoginTitle h1{
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 54px;
+  color: #0e4152;
+}
+
+.LoginImg{
+  width: 100%;
+  height: 83%;
+}
+.LoginImg img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.LoginLeft{
+  width: 43%;
+  height: 100%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+
+.LoginLeftWrapper{
+  width: 88%;
+  height: 90%;
+}
+
+.LoginLeftImgDiv{
+  width: 100%;
+  height: 20%;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+.LoginLeftImgDiv img{
+  width: 200px;
+  height: 80px;
+  object-fit: cover;
+}
+
+.LoginLeftInputsDiv{
+  width: 100%;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.LoginLeftInputsDiv h2{
+  display: none;
+}
+
+.LoginLeftInputErrorDiv{
+  width: 100%;
+  height: 50px;
+  background: var(--swift-red-error--);
+  display: flex;
+  align-items: center;
+  padding-left: 40px;
+  padding-right: 15px;
+  justify-content: space-between;
+  border-radius: 5px;
+}
+
+.LoginLeftInputErrorDiv ul{
+  font-size: 14px;
+  line-height: 21px;
+  color: #fff;
+}
+.LoginLeftInputErrorDiv span i{
+  cursor: pointer;
+  color: #a8a8a8;
+  transition: color 0.2s ease-in;
+  font-weight: 600;
+}
+.LoginLeftInputErrorDiv span i:hover{
+  cursor: pointer;
+  color: #fff;
+}
+
+.LoginLeftEmailDiv{
+  width: 100%;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.LoginLeftEmailDiv label{
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+  color: rgb(14, 65, 82);
+}
+.LoginLeftEmailDiv label span{
+  color: var(--swift-red-error--);
+}
+
+.LoginLeftEmailDivInputBox{
+  width: 100%;
+  height: 45px;
+  border: 1px solid #ddd;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  gap: 15px;
+}
+.LoginLeftEmailDivInputBox span{
+  width: 20px;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.LoginLeftEmailDivInputBox span .CiMail{
+  font-size: 18px;
+  color: var(--swift-primary--);
+}
+.LoginLeftEmailDivInputBox input{
+  border: none;
+  font-size: 13px;
+  color: var(--swift-primary--);
+  outline: none;
+  width: 90%;
+  height: 90%;
+}
+
+.LoginLeftPasswordDiv{
+  width: 100%;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.LoginLeftPasswordDiv label{
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+  color: rgb(14, 65, 82);
+}
+.LoginLeftPasswordDiv label span{
+  color: var(--swift-red-error--);
+}
+
+.LoginLeftPasswordDivInputBox{
+  width: 100%;
+  height: 45px;
+  border: 1px solid #ddd;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  gap: 15px;
+}
+.LoginLeftPasswordDivInputBox span{
+  width: 20px;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.LoginLeftPasswordDivInputBox span .FiKey{
+  font-size: 18px;
+  color: var(--swift-primary--);
+}
+.LoginLeftPasswordDivInputBox input{
+  border: none;
+  color: var(--swift-primary--);
+  outline: none;
+  font-size: 13px;
+  width: 90%;
+  height: 90%;
+}
+
+.LoginLeftControlDiv{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.LoginLeftControlDivRememberDiv{
+  width: max-content;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.LoginLeftControlDivRememberDiv input{
+  /* border: 1px solid #000; */
+  width: 17px;
+  height: 17px;
+}
+.LoginLeftControlDivRememberDiv p{
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+}
+
+.LoginLeftBtnDiv{
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+.LoginLeftBtnDiv button{
+  width: 100%;
+  height: 50px;
+  background: var(--swift-primary--);
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+.LoginLeftBtnDiv button:hover{
+  background: #1d6279;
+  cursor: pointer;
+  outline: none;
+}
+
+
+.LoginLeftInfo{
+  width: 100%;
+  height: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.LoginLeftInfoSignUp{
+  font-size: 14.4px;
+  font-weight: 400;
+  line-height: 23.04px;
+  color: #3c4858;
+}
+.LoginLeftInfoSignUp span{
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 25.6px;
+  color: #323c49;
+}
+
+.LoginLeftInfoRights{
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 16.5px;
+  color: #3c4858;
+}
+
+
+
+
+
+
+
+/* End of Media Query Styling For Desktop Device */
+
+/* Media Query Styling for Small Desktop  */
+
+@media only screen and (max-width: 1200px){
+
+  .LoginBody{
+    width: 100%;
+    height: 100vh;
+    background: var(--swift-secondary--);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .LoginContainer{
+    width: 85%;
+    height: 80%;
+    background: #fff;
+    display: flex;
+    border-radius: 7px;
+    border: 1px solid #eeeeee;
+  }
+  
+  .LoginRight{
+    width: 57%;
+    height: 100%;
+    padding: 25px 0px 25px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .LoginTitle{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .LoginTitle h1{
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 54px;
+    color: #0e4152;
+  }
+  
+  .LoginImg{
+    width: 100%;
+    height: 83%;
+  }
+  .LoginImg img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  .LoginLeft{
+    width: 43%;
+    height: 100%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+  }
+  
+  .LoginLeftWrapper{
+    width: 88%;
+    height: 90%;
+  }
+  
+  .LoginLeftImgDiv{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    padding-bottom: 10px;
+  }
+  .LoginLeftImgDiv img{
+    width: 200px;
+    height: 80px;
+    object-fit: cover;
+  }
+  
+  .LoginLeftInputsDiv{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .LoginLeftInputsDiv h2{
+    display: none;
+  }
+  
+  .LoginLeftInputErrorDiv{
+    width: 100%;
+    height: 50px;
+    background: var(--swift-red-error--);
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 15px;
+    justify-content: space-between;
+    border-radius: 5px;
+  }
+  
+  .LoginLeftInputErrorDiv ul{
+    font-size: 14px;
+    line-height: 21px;
+    color: #fff;
+  }
+  .LoginLeftInputErrorDiv span i{
+    cursor: pointer;
+    color: #a8a8a8;
+    transition: color 0.2s ease-in;
+    font-weight: 600;
+  }
+  .LoginLeftInputErrorDiv span i:hover{
+    cursor: pointer;
+    color: #fff;
+  }
+  
+  .LoginLeftEmailDiv{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .LoginLeftEmailDiv label{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+    color: rgb(14, 65, 82);
+  }
+  .LoginLeftEmailDiv label span{
+    color: var(--swift-red-error--);
+  }
+  
+  .LoginLeftEmailDivInputBox{
+    width: 100%;
+    height: 45px;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    gap: 15px;
+  }
+  .LoginLeftEmailDivInputBox span{
+    width: 20px;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  .LoginLeftEmailDivInputBox span .CiMail{
+    font-size: 18px;
+    color: var(--swift-primary--);
+  }
+  .LoginLeftEmailDivInputBox input{
+    border: none;
+    font-size: 13px;
+    color: var(--swift-primary--);
+    outline: none;
+    width: 90%;
+    height: 90%;
+  }
+  
+  .LoginLeftPasswordDiv{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .LoginLeftPasswordDiv label{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+    color: rgb(14, 65, 82);
+  }
+  .LoginLeftPasswordDiv label span{
+    color: var(--swift-red-error--);
+  }
+  
+  .LoginLeftPasswordDivInputBox{
+    width: 100%;
+    height: 45px;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    gap: 15px;
+  }
+  .LoginLeftPasswordDivInputBox span{
+    width: 20px;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  .LoginLeftPasswordDivInputBox span .FiKey{
+    font-size: 18px;
+    color: var(--swift-primary--);
+  }
+  .LoginLeftPasswordDivInputBox input{
+    border: none;
+    color: var(--swift-primary--);
+    outline: none;
+    font-size: 13px;
+    width: 90%;
+    height: 90%;
+  }
+  
+  .LoginLeftControlDiv{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .LoginLeftControlDivRememberDiv{
+    width: max-content;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .LoginLeftControlDivRememberDiv input{
+    /* border: 1px solid #000; */
+    width: 17px;
+    height: 17px;
+  }
+  .LoginLeftControlDivRememberDiv p{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+  }
+  
+  .LoginLeftBtnDiv{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+  }
+  .LoginLeftBtnDiv button{
+    width: 100%;
+    height: 50px;
+    background: var(--swift-primary--);
+    border-radius: 6px;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+  }
+  .LoginLeftBtnDiv button:hover{
+    background: #1d6279;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  
+  .LoginLeftInfo{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .LoginLeftInfoSignUp{
+    font-size: 14.4px;
+    font-weight: 400;
+    line-height: 23.04px;
+    color: #3c4858;
+  }
+  .LoginLeftInfoSignUp span{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 25.6px;
+    color: #323c49;
+  }
+  
+  .LoginLeftInfoRights{
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 16.5px;
+    color: #3c4858;
+  }
+  
+
+}
+
+@media only screen and (max-width: 1000px){
+  .LoginContainer{
+    width: 95%;
+    height: 85%;
+    background: #fff;
+    display: flex;
+    border-radius: 7px;
+    border: 1px solid #eeeeee;
+  }
+
+  .LoginTitle p{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: normal;
+    color: #0e4152;
+  }
+  .LoginLeftInputsDiv h2{
+    display: none;
+  }
+}
+
+/* End of Media Query Styling for Tablet Device */
+
+
+/* Media Query Styling for Big Tablet Device */
+
+@media only screen and (max-width: 990px){
+
+  .LoginBody{
+    width: 100%;
+    height: 100vh;
+    background: var(--swift-secondary--);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .LoginContainer{
+    width: 80%;
+    height: 85%;
+    background: #fff;
+    display: flex;
+    border-radius: 7px;
+    border: 1px solid #eeeeee;
+  }
+  
+  .LoginRight{
+    width: 57%;
+    height: 100%;
+    padding: 25px 0px 25px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  
+  .LoginTitle{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+  }
+  .LoginTitle h1{
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 54px;
+    color: #0e4152;
+  }
+  .LoginTitle p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    color: #0e4152;
+  }
+  
+  .LoginImg{
+    width: 100%;
+    height: 60%;
+  }
+  .LoginImg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .LoginLeft{
+    width: 43%;
+    height: 100%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+  }
+  
+  .LoginLeftWrapper{
+    width: 88%;
+    height: 90%;
+  }
+  
+  .LoginLeftImgDiv{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    padding-bottom: 10px;
+  }
+  .LoginLeftImgDiv img{
+    width: 200px;
+    height: 80px;
+    object-fit: cover;
+  }
+  
+  .LoginLeftInputsDiv{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .LoginLeftInputsDiv h2{
+    display: none;
+  }
+  
+  .LoginLeftInputErrorDiv{
+    width: 100%;
+    height: 50px;
+    background: var(--swift-red-error--);
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 15px;
+    justify-content: space-between;
+    border-radius: 5px;
+  }
+  
+  .LoginLeftInputErrorDiv ul{
+    font-size: 14px;
+    line-height: 21px;
+    color: #fff;
+  }
+  .LoginLeftInputErrorDiv span i{
+    cursor: pointer;
+    color: #a8a8a8;
+    transition: color 0.2s ease-in;
+    font-weight: 600;
+  }
+  .LoginLeftInputErrorDiv span i:hover{
+    cursor: pointer;
+    color: #fff;
+  }
+  
+  .LoginLeftEmailDiv{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .LoginLeftEmailDiv label{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+    color: rgb(14, 65, 82);
+  }
+  .LoginLeftEmailDiv label span{
+    color: var(--swift-red-error--);
+  }
+  
+  .LoginLeftEmailDivInputBox{
+    width: 100%;
+    height: 45px;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    gap: 15px;
+  }
+  .LoginLeftEmailDivInputBox span{
+    width: 20px;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  .LoginLeftEmailDivInputBox span .CiMail{
+    font-size: 18px;
+    color: var(--swift-primary--);
+  }
+  .LoginLeftEmailDivInputBox input{
+    border: none;
+    font-size: 13px;
+    color: var(--swift-primary--);
+    outline: none;
+    width: 90%;
+    height: 90%;
+  }
+  
+  .LoginLeftPasswordDiv{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .LoginLeftPasswordDiv label{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+    color: rgb(14, 65, 82);
+  }
+  .LoginLeftPasswordDiv label span{
+    color: var(--swift-red-error--);
+  }
+  
+  .LoginLeftPasswordDivInputBox{
+    width: 100%;
+    height: 45px;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    gap: 15px;
+  }
+  .LoginLeftPasswordDivInputBox span{
+    width: 20px;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  .LoginLeftPasswordDivInputBox span .FiKey{
+    font-size: 18px;
+    color: var(--swift-primary--);
+  }
+  .LoginLeftPasswordDivInputBox input{
+    border: none;
+    color: var(--swift-primary--);
+    outline: none;
+    font-size: 13px;
+    width: 90%;
+    height: 90%;
+  }
+  
+  .LoginLeftControlDiv{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .LoginLeftControlDivRememberDiv{
+    width: max-content;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .LoginLeftControlDivRememberDiv input{
+    /* border: 1px solid #000; */
+    width: 17px;
+    height: 17px;
+  }
+  .LoginLeftControlDivRememberDiv p{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+  }
+  
+  .LoginLeftBtnDiv{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+  }
+  .LoginLeftBtnDiv button{
+    width: 100%;
+    height: 50px;
+    background: var(--swift-primary--);
+    border-radius: 6px;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+  }
+  .LoginLeftBtnDiv button:hover{
+    background: #1d6279;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  
+  .LoginLeftInfo{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .LoginLeftInfoSignUp{
+    font-size: 14.4px;
+    font-weight: 400;
+    line-height: 23.04px;
+    color: #3c4858;
+  }
+  .LoginLeftInfoSignUp span{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 25.6px;
+    color: #323c49;
+  }
+  
+  .LoginLeftInfoRights{
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 16.5px;
+    color: #3c4858;
+  }
+  
+
+}
+
+@media only screen and (max-width: 850px){
+  .LoginContainer{
+    width: 90%;
+    height: 85%;
+    background: #fff;
+    display: flex;
+    border-radius: 7px;
+    border: 1px solid #eeeeee;
+  }
+
+  .LoginTitle p{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: normal;
+    color: #0e4152;
+  }
+  .LoginLeftInputsDiv h2{
+    display: none;
+  }
+}
+
+/* End of Media Query Styling for Tablet Device */
+/* Media Query Styling for Tablet Device */
+
+@media only screen and (max-width: 760px){
+
+  .LoginBody{
+    width: 100%;
+    height: 100vh;
+    background: var(--swift-secondary--);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .LoginContainer{
+    width: 80%;
+    height: 85%;
+    background: #fff;
+    display: flex;
+    border-radius: 7px;
+    border: 1px solid #eeeeee;
+  }
+  
+  .LoginRight{
+    width: 57%;
+    height: 100%;
+    padding: 25px 0px 25px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    display: none;
+  }
+  
+  .LoginTitle{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+  }
+  .LoginTitle h1{
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 54px;
+    color: #0e4152;
+  }
+  .LoginTitle p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    color: #0e4152;
+  }
+  
+  .LoginImg{
+    width: 100%;
+    height: 60%;
+  }
+  .LoginImg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .LoginLeft{
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+  }
+  
+  .LoginLeftWrapper{
+    width: 88%;
+    height: 90%;
+  }
+  
+  .LoginLeftImgDiv{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    padding-bottom: 10px;
+  }
+  .LoginLeftImgDiv img{
+    width: 200px;
+    height: 80px;
+    object-fit: cover;
+  }
+  
+  .LoginLeftInputsDiv{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  
+  .LoginLeftInputErrorDiv{
+    width: 100%;
+    height: 50px;
+    background: var(--swift-red-error--);
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 15px;
+    justify-content: space-between;
+    border-radius: 5px;
+  }
+  
+  .LoginLeftInputErrorDiv ul{
+    font-size: 14px;
+    line-height: 21px;
+    color: #fff;
+  }
+  .LoginLeftInputErrorDiv span i{
+    cursor: pointer;
+    color: #a8a8a8;
+    transition: color 0.2s ease-in;
+    font-weight: 600;
+  }
+  .LoginLeftInputErrorDiv span i:hover{
+    cursor: pointer;
+    color: #fff;
+  }
+  
+  .LoginLeftEmailDiv{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .LoginLeftEmailDiv label{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+    color: rgb(14, 65, 82);
+  }
+  .LoginLeftEmailDiv label span{
+    color: var(--swift-red-error--);
+  }
+  
+  .LoginLeftEmailDivInputBox{
+    width: 100%;
+    height: 45px;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    gap: 15px;
+  }
+  .LoginLeftEmailDivInputBox span{
+    width: 20px;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  .LoginLeftEmailDivInputBox span .CiMail{
+    font-size: 18px;
+    color: var(--swift-primary--);
+  }
+  .LoginLeftEmailDivInputBox input{
+    border: none;
+    font-size: 13px;
+    color: var(--swift-primary--);
+    outline: none;
+    width: 90%;
+    height: 90%;
+  }
+  
+  .LoginLeftPasswordDiv{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .LoginLeftPasswordDiv label{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+    color: rgb(14, 65, 82);
+  }
+  .LoginLeftPasswordDiv label span{
+    color: var(--swift-red-error--);
+  }
+  
+  .LoginLeftPasswordDivInputBox{
+    width: 100%;
+    height: 45px;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    gap: 15px;
+  }
+  .LoginLeftPasswordDivInputBox span{
+    width: 20px;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  .LoginLeftPasswordDivInputBox span .FiKey{
+    font-size: 18px;
+    color: var(--swift-primary--);
+  }
+  .LoginLeftPasswordDivInputBox input{
+    border: none;
+    color: var(--swift-primary--);
+    outline: none;
+    font-size: 13px;
+    width: 90%;
+    height: 90%;
+  }
+  
+  .LoginLeftControlDiv{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .LoginLeftControlDivRememberDiv{
+    width: max-content;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .LoginLeftControlDivRememberDiv input{
+    /* border: 1px solid #000; */
+    width: 17px;
+    height: 17px;
+  }
+  .LoginLeftControlDivRememberDiv p{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+  }
+  
+  .LoginLeftBtnDiv{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+  }
+  .LoginLeftBtnDiv button{
+    width: 100%;
+    height: 50px;
+    background: var(--swift-primary--);
+    border-radius: 6px;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+  }
+  .LoginLeftBtnDiv button:hover{
+    background: #1d6279;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  
+  .LoginLeftInfo{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .LoginLeftInfoSignUp{
+    font-size: 14.4px;
+    font-weight: 400;
+    line-height: 23.04px;
+    color: #3c4858;
+  }
+  .LoginLeftInfoSignUp span{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 25.6px;
+    color: #323c49;
+  }
+  
+  .LoginLeftInfoRights{
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 16.5px;
+    color: #3c4858;
+  }
+  
+
+}
+
+/* End of Media Query Styling for Tablet Device */
+
+/* Media Query Styling for Mobile Device */
+
+@media only screen and (max-width: 480px) {
+
+  .LoginBody{
+    width: 100%;
+    height: 100vh;
+    background: var(--swift-secondary--);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .LoginContainer{
+    width: 90%;
+    height: 75%;
+    background: #fff;
+    display: flex;
+    border-radius: 7px;
+    border: 1px solid #eeeeee;
+  }
+  
+  .LoginRight{
+    width: 57%;
+    height: 100%;
+    padding: 25px 0px 25px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    display: none;
+  }
+  
+  .LoginTitle{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+  }
+  .LoginTitle h1{
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 54px;
+    color: #0e4152;
+  }
+  .LoginTitle p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    color: #0e4152;
+  }
+  
+  .LoginImg{
+    width: 100%;
+    height: 60%;
+  }
+  .LoginImg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .LoginLeft{
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+  }
+  
+  .LoginLeftWrapper{
+    width: 88%;
+    height: 90%;
+  }
+  
+  .LoginLeftImgDiv{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    padding-bottom: 10px;
+  }
+  .LoginLeftImgDiv img{
+    width: 200px;
+    height: 80px;
+    object-fit: cover;
+  }
+  
+  .LoginLeftInputsDiv{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  .LoginLeftInputsDiv h2{
+    text-align: center;
+  }
+  
+  .LoginLeftInputErrorDiv{
+    width: 100%;
+    height: 50px;
+    background: var(--swift-red-error--);
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 15px;
+    justify-content: space-between;
+    border-radius: 5px;
+    display: none;
+  }
+  
+  .LoginLeftInputErrorDiv ul{
+    font-size: 14px;
+    line-height: 21px;
+    color: #fff;
+  }
+  .LoginLeftInputErrorDiv span i{
+    cursor: pointer;
+    color: #a8a8a8;
+    transition: color 0.2s ease-in;
+    font-weight: 600;
+  }
+  .LoginLeftInputErrorDiv span i:hover{
+    cursor: pointer;
+    color: #fff;
+  }
+  
+  .LoginLeftEmailDiv{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .LoginLeftEmailDiv label{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+    color: rgb(14, 65, 82);
+  }
+  .LoginLeftEmailDiv label span{
+    color: var(--swift-red-error--);
+  }
+  
+  .LoginLeftEmailDivInputBox{
+    width: 100%;
+    height: 45px;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    gap: 15px;
+  }
+  .LoginLeftEmailDivInputBox span{
+    width: 20px;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  .LoginLeftEmailDivInputBox span .CiMail{
+    font-size: 18px;
+    color: var(--swift-primary--);
+  }
+  .LoginLeftEmailDivInputBox input{
+    border: none;
+    font-size: 13px;
+    color: var(--swift-primary--);
+    outline: none;
+    width: 90%;
+    height: 90%;
+  }
+  
+  .LoginLeftPasswordDiv{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .LoginLeftPasswordDiv label{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+    color: rgb(14, 65, 82);
+  }
+  .LoginLeftPasswordDiv label span{
+    color: var(--swift-red-error--);
+  }
+  
+  .LoginLeftPasswordDivInputBox{
+    width: 100%;
+    height: 45px;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    gap: 15px;
+  }
+  .LoginLeftPasswordDivInputBox span{
+    width: 20px;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  .LoginLeftPasswordDivInputBox span .FiKey{
+    font-size: 18px;
+    color: var(--swift-primary--);
+  }
+  .LoginLeftPasswordDivInputBox input{
+    border: none;
+    color: var(--swift-primary--);
+    outline: none;
+    font-size: 13px;
+    width: 90%;
+    height: 90%;
+  }
+  
+  .LoginLeftControlDiv{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .LoginLeftControlDivRememberDiv{
+    width: max-content;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .LoginLeftControlDivRememberDiv input{
+    /* border: 1px solid #000; */
+    width: 17px;
+    height: 17px;
+  }
+  .LoginLeftControlDivRememberDiv p{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+  }
+  
+  .LoginLeftBtnDiv{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+  }
+  .LoginLeftBtnDiv button{
+    width: 100%;
+    height: 50px;
+    background: var(--swift-primary--);
+    border-radius: 6px;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+  }
+  .LoginLeftBtnDiv button:hover{
+    background: #1d6279;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  
+  .LoginLeftInfo{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .LoginLeftInfoSignUp{
+    font-size: 14.4px;
+    font-weight: 400;
+    line-height: 23.04px;
+    color: #3c4858;
+  }
+  .LoginLeftInfoSignUp span{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 25.6px;
+    color: #323c49;
+  }
+  
+  .LoginLeftInfoRights{
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 16.5px;
+    color: #3c4858;
+  }
+
+}
+
+/* End of Media Query Styling for Mobile Device */
+
+
+/* Media Query Styling for Mobile Device */
+
+@media only screen and (max-width: 351px) {
+
+
+}
+
+/* End of Media Query Styling for Mobile Device */ 
