@@ -19,9 +19,11 @@ import HomeRoute from "./routes/HomeRoute";
 
 
 const router = createBrowserRouter([
+    
     {
         path: '/',
         element: <HomeRoute/>,
+        
     },
     {
         path: "dashboard/:id",
