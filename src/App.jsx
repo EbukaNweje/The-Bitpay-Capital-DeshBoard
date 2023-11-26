@@ -18,6 +18,8 @@ import Payment from "./Pages/Deposit/Payment";
 
 
 const router = createBrowserRouter([
+    // <HomeRoute path="/" exact component={<Dashboard />} />,
+    
     {
         path: "dashboard/:id",
         element: <Dashboard />,
