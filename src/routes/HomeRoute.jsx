@@ -9,7 +9,7 @@ const HomeRoute = () => {
   return (
     <>
       <Routes>
-            <Route index path="dashboard/:id" element={<Dashboard/>}/>
+            <Route index path="/" element={<Dashboard/>}/>
         </Routes>
     </>
   )
