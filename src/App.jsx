@@ -14,12 +14,16 @@ import MyPlans from "./Pages/MyPlans/MyPlans";
 import Referrals from "./Pages/Referrals/Referrals";
 import WithdrawFunds from "./Pages/Withdrawal/WithdrawFunds";
 import Payment from "./Pages/Deposit/Payment";
+import HomeE from "./HomeE";
 // import HomeRoute from "./routes/HomeRoute";
 
 
 const router = createBrowserRouter([
     // <HomeRoute path="/" exact component={<Dashboard />} />,
-    
+    {
+        path: '',
+        element: <HomeE/>
+    },
     {
         path: "dashboard/:id",
         element: <Dashboard />,
