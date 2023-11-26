@@ -3,15 +3,12 @@ import {  Routes, Route } from 'react-router-dom'
 // import Dashboard from '../Components/Dashboard/Dashboard'
 import HomeE from '../HomeE'
 
-
-
-
 const HomeRoute = () => {
   
   return (
     <>
       <Routes>
-            <Route index path="/:id"  element={<HomeE/>} />
+            <Route index path="/"  element={<HomeE/>} />
         </Routes>
     </>
   )
