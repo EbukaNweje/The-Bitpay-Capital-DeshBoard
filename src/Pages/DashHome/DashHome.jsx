@@ -55,10 +55,10 @@ const DashHome = () => {
                     
                 </h2>
                 <div className="DashHomeInfoBox1">
-                    <p>Welcome to Swift Earn Trade, Please buy a plan</p>
+                    <p>Welcome to Bitpay Capital, Please Forever In Profits.</p>
                 </div>
                 <div className="DashHomeInfoBox2">
-                    <p>Welcome to Swift Earn Trade</p>
+                    <p>Welcome to Bitpay Capital</p>
                 </div>
                 <div className="DashHomeMainContent">
                     <div className="DashHomeMainContentAccSummaryDiv">
