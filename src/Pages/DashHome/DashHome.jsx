@@ -27,7 +27,7 @@ const DashHome = () => {
           });
       }, []); // Empty dependency array ensures useEffect runs only once on component mount
 
-      const bitcoinValue = 100 / exchangeRate;
+      const bitcoinValue = userData.accountBalance / exchangeRate;
       const bitcoinValue2 = userData.totalProfit / exchangeRate;
       const bitcoinValue3 = userData.bonus / exchangeRate;
       const bitcoinValue4 = userData.ref / exchangeRate;
