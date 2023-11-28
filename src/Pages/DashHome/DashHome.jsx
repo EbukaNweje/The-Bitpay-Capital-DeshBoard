@@ -1,17 +1,13 @@
 import {
-    FaArrowAltCircleDown,
-    FaArrowAltCircleUp,
     FaCopy,
-    FaGift,
-    FaGifts,
     FaNotesMedical,
 } from "react-icons/fa";
 import "./DashHome.css";
-import {FaSackDollar, FaDatabase} from "react-icons/fa6";
-
+import lineChart from '../../assets/linechart.webp'
 import {useSelector} from 'react-redux'
 import { useEffect, useState } from "react";
 import axios from "axios";
+import vid from '../../assets/crypt.mp4'
 
 
 const DashHome = () => {
@@ -31,7 +27,7 @@ const DashHome = () => {
           });
       }, []); // Empty dependency array ensures useEffect runs only once on component mount
 
-      const bitcoinValue = userData.accountBalance / exchangeRate;
+      const bitcoinValue = 100 / exchangeRate;
       const bitcoinValue2 = userData.totalProfit / exchangeRate;
       const bitcoinValue3 = userData.bonus / exchangeRate;
       const bitcoinValue4 = userData.ref / exchangeRate;
@@ -55,7 +51,7 @@ const DashHome = () => {
                     
                 </h2>
                 <div className="DashHomeInfoBox1">
-                    <p>Welcome to Bitpay Capital, Please Forever In Profits.</p>
+                    <p>Welcome to Bitpay Capital, Forever In Profits.</p>
                 </div>
                 <div className="DashHomeInfoBox2">
                     <p>Welcome to Bitpay Capital</p>
@@ -70,11 +66,10 @@ const DashHome = () => {
                                         <h4>Account Balance</h4>
                                         <h3>$ &nbsp;{userData.accountBalance}.00</h3>
                                         <span style={{fontWeight:"700"}}>{roundedNumber}BTC</span>
+                                        <p className="lineChart"></p>
                                     </div>
                                     <div className="DashHomeMainContentAccSummaryRow1BoxR">
-                                        <span>
-                                            <FaSackDollar />
-                                        </span>
+                                        <img src={lineChart} alt="" />
                                     </div>
                                 </div>
                                 <div className="DashHomeMainContentAccSummaryRow1Box">
@@ -84,9 +79,7 @@ const DashHome = () => {
                                         <span style={{fontWeight:"700"}}>{roundedNumber2}BTC</span>
                                     </div>
                                     <div className="DashHomeMainContentAccSummaryRow1BoxR">
-                                        <span>
-                                            <FaDatabase />
-                                        </span>
+                                        <img src={lineChart} alt="" />
                                     </div>
                                 </div>
                                 <div className="DashHomeMainContentAccSummaryRow1Box">
@@ -96,9 +89,7 @@ const DashHome = () => {
                                         <span style={{fontWeight:"700"}}>{roundedNumber3}BTC</span>
                                     </div>
                                     <div className="DashHomeMainContentAccSummaryRow1BoxR">
-                                        <span>
-                                            <FaGift />
-                                        </span>
+                                        <img src={lineChart} alt="" />
                                     </div>
                                 </div>
                             {/* <div className="DashHomeMainContentAccSummaryRow2"> */}
@@ -108,10 +99,8 @@ const DashHome = () => {
                                         <h3>$ &nbsp;{userData.ref}.00</h3>
                                         <span style={{fontWeight:"700"}}>{roundedNumber4}BTC</span>
                                     </div>
-                                    <div className="DashHomeMainContentAccSummaryRow2BoxR">
-                                        <span>
-                                            <FaGifts />
-                                        </span>
+                                    <div className="DashHomeMainContentAccSummaryRow1BoxR">
+                                        <img src={lineChart} alt="" />
                                     </div>
                                 </div>
                                 <div className="DashHomeMainContentAccSummaryRow2Box">
@@ -120,10 +109,8 @@ const DashHome = () => {
                                         <h3>$ &nbsp;{userData.totalDeposit}.00</h3>
                                         <span style={{fontWeight:"700"}}>{roundedNumber5}BTC</span>
                                     </div>
-                                    <div className="DashHomeMainContentAccSummaryRow2BoxR">
-                                        <span>
-                                            <FaArrowAltCircleDown />
-                                        </span>
+                                    <div className="DashHomeMainContentAccSummaryRow1BoxR">
+                                        <img src={lineChart} alt="" />
                                     </div>
                                 </div>
                                 <div className="DashHomeMainContentAccSummaryRow2Box">
@@ -132,10 +119,8 @@ const DashHome = () => {
                                         <h3>$ &nbsp;{userData.totalWithdrawal}.00</h3>
                                         <span style={{fontWeight:"700"}}>{roundedNumber6}BTC</span>
                                     </div>
-                                    <div className="DashHomeMainContentAccSummaryRow2BoxR">
-                                        <span>
-                                            <FaArrowAltCircleUp />
-                                        </span>
+                                    <div className="DashHomeMainContentAccSummaryRow1BoxR">
+                                        <img src={lineChart} alt="" />
                                     </div>
                                 </div>
                                 <div className="DashHomeMainContentAccSummaryRow2Box">
@@ -144,10 +129,8 @@ const DashHome = () => {
                                         <h3>$ &nbsp;{userData.totalInvestment}.00</h3>
                                         <span style={{fontWeight:"700"}}>{roundedNumber7}BTC</span>
                                     </div>
-                                    <div className="DashHomeMainContentAccSummaryRow2BoxR">
-                                        <span>
-                                            <FaArrowAltCircleUp />
-                                        </span>
+                                    <div className="DashHomeMainContentAccSummaryRow1BoxR">
+                                        <img src={lineChart} alt="" />
                                     </div>
                                 </div>
                             {/* </div> */}
@@ -199,13 +182,16 @@ const DashHome = () => {
                         <div className="DashHomeMainContenReferUsDivBox">
                             <input
                                 type="text"
-                                value={"https://i.swiftearntr.com/ref/eze"}
+                                value={`https://i.swiftearntr.com/`}
                                 readOnly
                             />
                             <div className="DashHomeMainContenReferUsDivBoxCopy">
                                 <FaCopy />
                             </div>
                         </div>
+                    </div>
+                    <div className="DashHomeMainContenVidDiv">
+                        <video src={vid} muted autoPlay loop></video>
                     </div>
                 </div>
             </div>

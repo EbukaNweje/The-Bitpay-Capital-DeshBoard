@@ -106,7 +106,7 @@
 }
 
 .DashHomeMainContentAccSummaryRow1BoxL{
-  width: 70%;
+  width: 50%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -114,6 +114,7 @@
   padding-left: 25px;
   gap: 5px;
 }
+
 .DashHomeMainContentAccSummaryRow1BoxL h4{
   font-size: 16px;
   font-weight: 600;
@@ -128,12 +129,18 @@
 }
 
 .DashHomeMainContentAccSummaryRow1BoxR{
-  width: 30%;
+  width: 50%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+.DashHomeMainContentAccSummaryRow1BoxR img{
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+}
+
 .DashHomeMainContentAccSummaryRow1BoxR span{
   width: 50px;
   height: 50px;
@@ -158,7 +165,7 @@
 }
 
 .DashHomeMainContentAccSummaryRow2BoxL{
-  width: 70%;
+  width: 50%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -433,6 +440,15 @@
 .DashHomeMainContenReferUsDivBoxCopy:hover{
   background: var(--swift-primary--);
   color: #fff;
+}
+
+.DashHomeMainContenVidDiv{
+  width: 100%;
+  height: 70vh;
+}
+.DashHomeMainContenVidDiv video{
+  width: 100%;
+  height: 100%;
 }
 
 
@@ -901,6 +917,17 @@
   .DashHomeMainContenReferUsDivBoxCopy:hover{
     background: var(--swift-primary--);
     color: #fff;
+  }
+
+  .DashHomeMainContenVidDiv{
+    width: 100%;
+    height: 40vh;
+    background: red;
+  }
+  .DashHomeMainContenVidDiv video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
 }
