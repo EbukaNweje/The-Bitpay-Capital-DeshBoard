@@ -4,12 +4,14 @@ import PersonalSettings from "./PersonalSettings";
 import WithdrawalSettings from "./WithdrawalSettings";
 import PasswordSettings from "./PasswordSettings";
 import OtherSettings from "./OtherSettings";
+import { useSelector } from "react-redux";
 
 const Profile = () => {
     const [showPersonalS, setShowPersonalS] = useState(true);
     const [showWithdrawalS, setShowWithdrawalS] = useState(false);
     const [showPasswordS, setShowPasswordS] = useState(false);
     const [showOtherS, setShowOtherS] = useState(false);
+    const userData = useSelector((state) => state.persisitedReducer.user)
 
     const handleShowPersonalS = () => {
         setShowPersonalS(true);
@@ -69,7 +71,7 @@ const Profile = () => {
                     </div>
                     <div className="ProfileMainContent">
                         {showPersonalS ? (
-                            <PersonalSettings />
+                            <PersonalSettings  data = {userData}/>
                         ) : showWithdrawalS ? (
                             <WithdrawalSettings />
                         ) : showPasswordS ? (

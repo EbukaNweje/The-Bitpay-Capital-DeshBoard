@@ -7,6 +7,7 @@
   width: 100%;
   height: max-content;
   padding: 0 20px;
+  position: relative;
 }
 
 .DepPaymentBody h1{
@@ -18,7 +19,7 @@
 
 .DepPaymentContent{
   width: 100%;
-  height: 85vh;
+  height: max-content;
   background: #fff;
   border-radius: 7px;
   display: flex;
@@ -203,6 +204,38 @@
   border-radius: 5px;
 }
 
+.SuccessPaid {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(16, 0, 0, 0.411);
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.PayCon {
+  width: 40%;
+  height: 40%;
+  background: #fff;
+  border-radius: 3px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.PayCon h3{
+  font-size: 20px;
+  font-family: 'poppins';
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
 
 
 
@@ -233,6 +266,10 @@
 
 @media only screen and (max-width: 760px){
 
+  .PayCon{
+    width: 90%;
+    font-size: 15px;
+  }
 
 
 }
@@ -242,6 +279,14 @@
 /* Media Query Styling for Mobile Device */
 
 @media only screen and (max-width: 480px) {
+
+  .PayCon{
+    width: 90%;
+  }
+
+  .PayCon h3{
+    font-size: 17px;
+  }
 
   .DepPaymentBody{
     width: 100%;
@@ -258,7 +303,7 @@
   
   .DepPaymentContent{
     width: 100%;
-    height: 75vh;
+    height: max-content;
     background: #fff;
     border-radius: 7px;
     display: flex;
@@ -453,6 +498,13 @@
 
 @media only screen and (max-width: 351px) {
 
+  .PayCon{
+    width: 90%;
+  }
+
+  .PayCon h3{
+    font-size: 17px;
+  }
 
 }
 

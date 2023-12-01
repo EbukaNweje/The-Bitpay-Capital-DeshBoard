@@ -2,14 +2,102 @@ import {FaHandHoldingDollar} from "react-icons/fa6";
 import {FaAngleDown} from "react-icons/fa";
 import "./TradingPlans.css";
 import {IoWalletOutline} from "react-icons/io5";
-import {useState} from "react";
+import {useEffect, useState} from "react";
+import {useSelector} from 'react-redux'
+
 
 const TradingPlans = () => {
     const [showSelect, setShowSelect] = useState(false);
+    const [selectedPackage, setSelectedPackage] = useState(null)
+    const[planPrice, setPlanPrice] = useState(0)
+    const [boxPrice, setBoxPrice] = useState(0)
+    
+    const userData = useSelector((state) => state.persisitedReducer.user)
 
     const handleShowSelect = () => {
         setShowSelect(!showSelect);
     };
+
+    const [disabledBtn, setDisabledBtn] = useState(true)
+    const [info, setInfo] = useState('')
+    const [error, setError] = useState(false)
+
+    const packageDatas = [
+        {
+            name: 'Starter Plan',
+            duration: 42,
+            price: "24,000",
+            minimumDeposit: "7,000",
+            maximunDeposit: "24,000",
+            minimumReturn: "200",
+            maximumReturn: "350",
+            // bonus: 0,
+            selected: true,
+        },
+        {
+            name: 'Silver Plan',
+            duration: 35,
+            price: "49,000",
+            minimumDeposit: "25,000",
+            maximunDeposit: "49,000",
+            minimumReturn: "350",
+            maximumReturn: "600",
+            // bonus: 0,
+            selected: true,
+        },
+        {
+            name: 'Gold Plan',
+            duration: 28,
+            price: "99,000",
+            minimumDeposit: "50,000",
+            maximunDeposit: "99,000",
+            minimumReturn: "600",
+            maximumReturn: "1,100",
+            // bonus: 0,
+            selected: true,
+        },
+        {
+            name: 'Platinum Plan',
+            duration: 28,
+            price: "1,000,000",
+            minimumDeposit: "150,000",
+            maximunDeposit: "1,000,000",
+            minimumReturn: "600",
+            maximumReturn: "1,100",
+            // bonus: 0,
+            selected: true,
+        },
+    ]
+
+    // const amountBox = [
+    //     100,
+    //     250,
+    //     500,
+    //     1000,
+    //     1500,
+    //     2000,
+    // ]
+
+    const validateSubmit = () =>{
+        if(userData.accountBalance <= 3){
+            setDisabledBtn(true)
+            setInfo('Insufficient funds')
+            setError(true)
+        } else if (planPrice > userData.us){
+            setDisabledBtn(true)
+            setInfo('Insufficient funds')
+            setError(true)
+        }else {
+            setDisabledBtn(false)
+            setInfo('')
+            setError(false)
+        }
+    }
+
+    useEffect(()=>{
+        validateSubmit()
+    },[])
+
 
     return (
         <>
@@ -26,7 +114,9 @@ const TradingPlans = () => {
                                     <span>
                                         <FaHandHoldingDollar />
                                     </span>
-                                    ULTIMATE PACKAGE
+                                    {
+                                        selectedPackage !== null ? `${selectedPackage.name}` : 'SELECT PACKAGE'
+                                    }
                                 </h3>
                                 <p
                                     className={`Angle ${
@@ -41,12 +131,28 @@ const TradingPlans = () => {
                                     showSelect ? "active" : ""
                                 }`}
                             >
-                                <div className="TradingPlansLeftBoxADropItem" onClick={handleShowSelect}>
+                                {
+                                    packageDatas?.map((item, index)=>(
+                                        <div key={index} className="TradingPlansLeftBoxADropItem" onClick={()=>{
+                                            handleShowSelect()
+                                            setSelectedPackage(item);
+                                        }}>
                                     <h3>
                                         <span>
                                             <FaHandHoldingDollar />
                                         </span>
-                                        ULTIMATE PACKAGE
+                                        {item.name}
+                                    </h3>
+                                </div>
+                                    ))
+                                }
+                                
+                                {/* <div className="TradingPlansLeftBoxADropItem" onClick={handleShowSelect}>
+                                    <h3>
+                                        <span>
+                                            <FaHandHoldingDollar />
+                                        </span>
+                                        DELUXE PACKAGE
                                     </h3>
                                 </div>
                                 <div className="TradingPlansLeftBoxADropItem" onClick={handleShowSelect}>
@@ -56,51 +162,42 @@ const TradingPlans = () => {
                                         </span>
                                         ULTIMATE PACKAGE
                                     </h3>
-                                </div>
-                                <div className="TradingPlansLeftBoxADropItem" onClick={handleShowSelect}>
-                                    <h3>
-                                        <span>
-                                            <FaHandHoldingDollar />
-                                        </span>
-                                        ULTIMATE PACKAGE
-                                    </h3>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
-                        <div className="TradingPlansLeftBoxB">
+
+                        {/* <div className="TradingPlansLeftBoxB">
                             <p>Choose Quick Amount to Invest</p>
                             <div className="TradingPlansLeftBoxBItem">
-                                <div className="TradingPlansLeftBoxBAmount">
-                                    $100
+                                {
+                                    amountBox.map((item, index) =>(
+                                        <div key={index} className="TradingPlansLeftBoxBAmount" onClick={()=>{
+                                            setBoxPrice(item)
+                                            setPlanPrice(item)
+                                        }
+                                        }>
+                                    ${item}
                                 </div>
-                                <div className="TradingPlansLeftBoxBAmount">
-                                    $250
-                                </div>
-                                <div className="TradingPlansLeftBoxBAmount">
-                                    $500
-                                </div>
-                                <div className="TradingPlansLeftBoxBAmount">
-                                    $1,000
-                                </div>
-                                <div className="TradingPlansLeftBoxBAmount">
-                                    $1,500
-                                </div>
-                                <div className="TradingPlansLeftBoxBAmount">
-                                    $2,000
-                                </div>
+                                    ))
+                                }
+                                
                             </div>
-                        </div>
+                        </div> */}
+                        
                         <div className="TradingPlansLeftBoxC">
-                            <p>Or Enter Your Amount</p>
-                            <input type="number" min={0} placeholder="0" />
+                            <p>Enter Your Amount</p>
+                            <input type="number" min={0} placeholder="0" onChange={(e)=> {
+                                setPlanPrice(e.target.value)
+                            }
+                            }/>
                         </div>
                         <div className="TradingPlansLeftBoxD">
-                            <p>Choose Payment Method</p>
+                            <p>Available balance <span style={{color: 'red'}}>{error ? `${info}` : null}</span></p>
                             <div className="TradingPlansLeftBoxDDiv">
                                 <div className="TradingPlansLeftBoxDItem">
                                     <IoWalletOutline className="IoWalletOutline" />
                                     <p>
-                                        Account Balance <span>$0</span>
+                                        Account Balance <span >${userData?.accountBalance}</span>
                                     </p>
                                 </div>
                             </div>
@@ -109,52 +206,57 @@ const TradingPlans = () => {
                     <div className="TradingPlansRight">
                         <h3>Your Investment Details</h3>
                         <div className="TradingPlansRightBox">
-                            <div className="TradingPlansRightBoxRow1">
+                            {
+                                selectedPackage && (<>
+                                    <div className="TradingPlansRightBoxRow1">
                                 <div className="TradingPlansRightBoxRow1L">
                                     <h5>Name of plan</h5>
-                                    <p>ULTIMATE PACKAGE</p>
+                                    <p>{selectedPackage.name}</p>
                                 </div>
                                 <div className="TradingPlansRightBoxRow1R">
                                     <h5>Plan Price</h5>
-                                    <p>$1000000</p>
+                                    <p>{selectedPackage.price}</p>
                                 </div>
                             </div>
-                            <div className="TradingPlansRightBoxRow1">
+                            {/* <div className="TradingPlansRightBoxRow1">
                                 <div className="TradingPlansRightBoxRow1L">
                                     <h5>Duration</h5>
-                                    <p>1 Days</p>
+                                    <p>{selectedPackage.duration} Days</p>
                                 </div>
                                 <div className="TradingPlansRightBoxRow1R">
                                     <h5>Profit</h5>
-                                    <p>46.5% Daily</p>
+                                    <p>{selectedPackage.profit}% Daily</p>
                                 </div>
-                            </div>
+                            </div> */}
                             <div className="TradingPlansRightBoxRow1">
                                 <div className="TradingPlansRightBoxRow1L">
                                     <h5>Minimum Deposit</h5>
-                                    <p>$10000</p>
+                                    <p>${selectedPackage.minimumDeposit}</p>
                                 </div>
                                 <div className="TradingPlansRightBoxRow1R">
                                     <h5>Maximum Deposit</h5>
-                                    <p>$100000</p>
+                                    <p>${selectedPackage.maximunDeposit}</p>
                                 </div>
                             </div>
                             <div className="TradingPlansRightBoxRow1">
                                 <div className="TradingPlansRightBoxRow1L">
                                     <h5>Minimum Return</h5>
-                                    <p>46.5%</p>
+                                    <p>{selectedPackage.minimumReturn}%</p>
                                 </div>
                                 <div className="TradingPlansRightBoxRow1R">
                                     <h5>Maximum Return</h5>
-                                    <p>46.5%</p>
+                                    <p>{selectedPackage.maximumReturn}%</p>
                                 </div>
                             </div>
                             <div className="TradingPlansRightBoxRow2">
                                 <div className="TradingPlansRightBoxRow1L">
-                                    <h5>Bonus</h5>
-                                    <p>$0</p>
+                                <h5>Duration</h5>
+                                <p>{selectedPackage.duration} Days</p>
                                 </div>
                             </div>
+                                </>)
+                            }
+                            
                         </div>
                         <div className="TradingPlansRightBoxPay">
                             <div className="TradingPlansRightBoxPayTop">
@@ -164,9 +266,9 @@ const TradingPlans = () => {
                             </div>
                             <div className="TradingPlansRightBoxPayDown">
                                 <p>
-                                    Amount to invest: <span>$2,000</span>
+                                    Amount to invest: <span>${planPrice}</span>
                                 </p>
-                                <button>Confirm & Invest</button>
+                                <button disabled={disabledBtn}>Confirm & Invest</button>
                             </div>
                         </div>
                     </div>

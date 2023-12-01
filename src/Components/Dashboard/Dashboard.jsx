@@ -1,5 +1,5 @@
 import "./Dashboard.css";
-import Logo from "../../assets/Swift-Earn-Logo.jpg";
+import Logo from "../../assets/Swift-Earn-Logo.png";
 // import Logo from "../../assets/Swift-Earn-Logo.jpg";
 import {NavLink} from "react-router-dom";
 import {IoHomeOutline} from "react-icons/io5";
@@ -43,32 +43,32 @@ const Dashboard = () => {
 
     const { id } = useParams();
 
-console.log('User Id from URL:', id);
-const [userData, setUserdata] = useState({})
-
+    const [userData, setUserdata] = useState({})
+    
     const handleGetUser = async () => {
-  
-    fetch(`https://the-bitpay-capital-back-end.vercel.app/api/userdata/${id}`, {
-      method: 'GET',
-    })
-    .then(response=> response.json())
-      .then(response => {
-    //    console.log(response);
-       setUserdata(response?.data)
-       dispatch(swiftUserData(response?.data));
-       localStorage.setItem("UserId", response?.data)
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  };
-
-  useEffect(() => {
-    if(id){
-        handleGetUser()
-    }
-  }, [id])
-  
+        
+        fetch(`https://the-bitpay-capital-back-end.vercel.app/api/userdata/${id}`, {
+            method: 'GET',
+        })
+        .then(response=> response.json())
+        .then(response => {
+            //    console.log(response);
+            setUserdata(response?.data)
+            dispatch(swiftUserData(response.data));
+            localStorage.setItem("UserId", response?.data)
+        })
+        .catch((error) => {
+            console.log(error);
+        });
+    };
+    
+    useEffect(() => {
+        if(id){
+            handleGetUser()
+        }
+    }, [id])
+    
+    console.log('User Id from URL:', userData);
 
 
     const [showUserDrop, setShowUserDrop] = useState(false);
@@ -108,7 +108,10 @@ const [userData, setUserdata] = useState({})
 
       const handleLogOut = () =>{
           localStorage.removeItem("UserId");
-        window.location.href = "https://the-bitpay-capital.vercel.app"
+        window.location.href = "https://www.whitebitcrypfield.org/"
+      }
+      const handleAdmin = () =>{
+        window.location.href = "https://www.whitebitcrypfield.org/#/admin"
       }
 
       const [showHome, setShowHome] = useState(true);
@@ -255,7 +258,8 @@ const [userData, setUserdata] = useState({})
 
     return (
         <>
-        <ScrollToTop/>
+    <ScrollToTop/>
+
             <div className="DashboardBody bigScreen">
                 <div className={`DashboardWrapper ${showNav ? "active" : " "}`}>
                     <div className={`DashboardNav ${showNav ? "active" : ""}`}>
@@ -393,6 +397,24 @@ const [userData, setUserdata] = useState({})
                                         <span>Referrals</span>
                                     </NavLink>
                                 </div>
+
+                                {
+                                    userData.isAdmin ? (
+                                        <div className="DashboardNavLinksRow5">
+                                        <NavLink
+                                            className="DashboardNavLinksItem"
+                                            onClick={handleAdmin}
+                                            activeClassName="current"
+                                        >
+                                            <span>
+                                                <LiaHandHoldingHeartSolid className="DashboardNavlinksIcons" />
+                                            </span>
+                                            <span>Admin</span>
+                                        </NavLink>
+                                    </div>
+                                    ) : null
+                                }
+                               
                             </div>
                             <div className="DashboardNavContact">
                                 <div className="DashboardNavContactText">
@@ -424,14 +446,14 @@ const [userData, setUserdata] = useState({})
                                     <div>
                                         <HiMiniUser className="HiMiniUser" />
                                     </div>
-                                    <p>{userData.fullName}</p>
+                                    <p>{userData?.fullName}</p>
                                 </div>
                             </div>
                             {showUserDrop ? (
                                 <>
                                     <div className="DashboardMainHeaderUserAccDiv">
                                         <div className="DashboardMainHeaderUserAccDivWrap">
-                                            <p>Hi Eflex Media</p>
+                                            <p>Hi {userData?.fullName}</p>
                                             <div className="DashboardMainHeaderUserAccDivPfp">
                                                 <span>
                                                     <FaRegUser />
@@ -455,7 +477,7 @@ const [userData, setUserdata] = useState({})
                         <div className="DashboardMainContent">
                             {/* <Outlet data = {userData} /> */}
                             {showHome ? (
-                                <DashHome />
+                                <DashHome  homechange = {setShowHome} planchange= {setTradingPlans} Transactions= {setShowTransaction} />
                             ) : showdeposit ? (
                                 <Deposit />
                             ) : showWithdraw ? (
@@ -471,13 +493,13 @@ const [userData, setUserdata] = useState({})
                             ) : showTradingPlans ? (
                                 <TradingPlans />
                             ) : showMyPlans ? (
-                                <MyPlans />
+                                <MyPlans myplans= {setTradingPlans} homechange = {setShowHome} data={userData}/>
                             ) : showReferrals ? (
                                 <Referrals />
                             ) : null}
                         </div>
                         <div className="DashboardMainFooter">
-                            <p>All Rights Reserved © Swift Earn Trade 2023</p>
+                            <p>All Rights Reserved ©  BitpayCapital 2023</p>
                         </div>
                     </div>
                 </div>

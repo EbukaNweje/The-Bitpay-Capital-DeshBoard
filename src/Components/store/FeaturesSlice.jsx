@@ -7,6 +7,8 @@ const swift = createSlice({
   initialState: {
     idValue: '',
     user: {},
+    depositData: [],
+    withdraw: [],
   },
   reducers: {
     setIdValue(state, action) {
@@ -16,8 +18,20 @@ const swift = createSlice({
         state.user = payload;
         console.log("Redux User data", payload);
         },
+
+        updateDepositData(state, action) {
+          state.depositData.push(action.payload) 
+          console.log("FIRST", action.payload);
+        //  = [...state.depositData, action.payload]
+        },
+        
+        updatewithdraw(state, action) {
+          state.withdraw.push(action.payload) 
+          console.log("FIRST", action.payload);
+        //  = [...state.depositData, action.payload]
+        },
   },
 });
 
-export const { setIdValue, swiftUserData } = swift.actions;
+export const { setIdValue, swiftUserData, updateDepositData, updatewithdraw } = swift.actions;
 export default swift.reducer;

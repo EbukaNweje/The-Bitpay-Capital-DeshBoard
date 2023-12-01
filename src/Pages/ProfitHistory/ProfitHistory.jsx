@@ -12,7 +12,7 @@ const ProfitHistory = () => {
                         <p>Type</p>
                         <p>Date Created</p>
                     </div>
-                    <div className="ProfitHistoryContentDown">
+                    {/* <div className="ProfitHistoryContentDown">
                         <div className="ProfitHistoryContentItem">
                             <p>Flex</p> 
                             <p>$2,000</p>
@@ -31,7 +31,7 @@ const ProfitHistory = () => {
                             <p>Easy Plan</p>
                             <p>24-10-2023</p>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </>

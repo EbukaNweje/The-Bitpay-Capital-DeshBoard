@@ -1,12 +1,20 @@
 import './Referrals.css'
 import {FaCopy, FaUser} from "react-icons/fa";
 import {FaArrowDownLong, FaArrowUpLong} from "react-icons/fa6";
+import { useState } from "react";
+import { CopyToClipboard } from "react-copy-to-clipboard";
 
 const Referrals = () => {
+    
+    const [state, setState] = useState({
+        value: "https://www.thebitpaycapital.com/",
+        copied: false,
+      });
+
     return (
         <>
             <div className="ReferralBody">
-                <h1>Refer users to Swift Earn Trade community</h1>
+                <h1>Refer users to  Bitpay Capital community</h1>
                 <div className="ReferralContent">
                     <div className="ReferralContentTop">
                         <div className="ReferralContentTopInputndLabel">
@@ -17,17 +25,22 @@ const Referrals = () => {
                             <div className="ReferralContentTopReferUsDivBox">
                                 <input
                                     type="text"
-                                    value={"https://i.swiftearntr.com/ref/eze"}
+                                    value={state.value}
                                     readOnly
                                 />
+                                <CopyToClipboard
+                                 text={state.value}
+                                 onCopy={() => setState({ copied: true })}
+                                 >
                                 <div className="ReferralContentTopReferUsDivBoxCopy">
                                     <FaCopy />
                                 </div>
+                                 </CopyToClipboard>
                             </div>
                         </div>
                         <div className='ReferralContentTopInfoBox'>
                           <p>or your Referral ID</p>
-                          <h5>eze</h5>
+                          {/* <h5>eze</h5> */}
                           <h4>You were reffered by</h4>
                           <h6><FaUser className='FaUser'/><span>null</span></h6>
                         </div>
@@ -87,19 +100,19 @@ const Referrals = () => {
                         <div className="ReferralContentResultC">
                             <div className="ReferralContentResultCItem">
                                 <div className="ReferralContentResultC1">
-                                    Mark Spence
+                                    {/* Mark Spence */}
                                 </div>
                                 <div className="ReferralContentResultC2">
-                                    Basic
+                                    {/* Basic */}
                                 </div>
                                 <div className="ReferralContentResultC3">
-                                    ID20013JOS
+                                    {/* ID20013JOS */}
                                 </div>
                                 <div className="ReferralContentResultC4">
-                                    <span>Active</span>
+                                    {/* <span>Active</span> */}
                                 </div>
                                 <div className="ReferralContentResultC5">
-                                    Thu, Nov 23, 2023 4:03 AM
+                                    {/* Thu, Nov 23, 2023 4:03 AM */}
                                 </div>
                             </div>
                         </div>

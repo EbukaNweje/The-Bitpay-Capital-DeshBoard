@@ -1,22 +1,28 @@
 import { NavLink } from "react-router-dom";
 import "./MyPlans.css";
 
-const MyPlans = () => {
+const MyPlans = ({myplans, homechange, data}) => {
+    console.log(data);
     return (
         <>
             <div className="MyPlansBody">
                 <h1>My Investment plans (All)</h1>
                 <div className="MyPlansContent">
+                 {
+                    data?.accountBalance >=1 ?
                     <div className="MyPlansContentWrap">
-                        <p>
-                            You do not have an investment plan at the moment or
-                            no value match your query.{" "}
-                        </p>
-                        <NavLink to={'/dashboard/trading-plans'}>
-
-                        <button>Buy a plan</button>
-                        </NavLink>
-                    </div>
+                    <p>
+                        Your Investment plan is on.{" "}
+                    </p>
+                    {/* <button onClick={()=> {homechange(false); myplans(true)}}>Buy a plan</button> */}
+                </div>: <div className="MyPlansContentWrap">
+                    <p>
+                        You do not have an investment plan at the moment or
+                        no value match your query.{" "}
+                    </p>
+                    <button onClick={()=> {homechange(false); myplans(true)}}>Buy a plan</button>
+                </div>
+                 }
                 </div>
             </div>
         </>

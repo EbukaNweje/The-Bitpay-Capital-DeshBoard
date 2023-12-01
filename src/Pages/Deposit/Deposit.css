@@ -18,7 +18,7 @@
 
 .DepositContent{
   width: 100%;
-  height: 380px;
+  height: max-content;
   background: #fff;
   border-radius: 7px;
   padding: 30px;
@@ -76,6 +76,7 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+  margin-top: 10%;
 }
 .DepositContentLeftDown h3{
   font-size: 20px;
@@ -187,7 +188,18 @@
 /* Media Query Styling for Tablet Device */
 
 @media only screen and (max-width: 760px){
-
+  .DepositContentLeftDownInput{
+    width: 70%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    border: 1px solid var(--swift-secondary--);
+    cursor: pointer;
+    font-size: 16px;
+    color: rgb(132, 146, 166);
+  }
 
 
 }
@@ -282,7 +294,7 @@
   }
   
   .DepositContentLeftDownInput{
-    width: 320px;
+    width: 70%;
     height: 70px;
     display: flex;
     align-items: center;
@@ -441,7 +453,7 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    margin-top: 20px;
+    margin-top: 5%;
   }
   .DepositContentLeftDown h3{
     font-size: 20px;
@@ -451,7 +463,7 @@
   }
   
   .DepositContentLeftDownInput{
-    width: 280px;
+    width: 80%;
     height: 70px;
     display: flex;
     align-items: center;

@@ -223,6 +223,8 @@
   font-weight: 400;
   line-height: 27.2px;
   color: rgb(132, 146, 166);
+  display: flex;
+  justify-content: space-between;
 }
 
 .TradingPlansLeftBoxDDiv{
@@ -402,6 +404,10 @@
   font-size: 16px;
   font-weight: 600;
   line-height: 24px;
+}
+.TradingPlansRightBoxPayDown button:disabled{
+  background: rgb(19, 139, 163);
+  cursor: not-allowed;
 }
 
 
