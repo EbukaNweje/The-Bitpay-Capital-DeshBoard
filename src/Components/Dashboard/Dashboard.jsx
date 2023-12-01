@@ -108,7 +108,7 @@ const Dashboard = () => {
 
       const handleLogOut = () =>{
           localStorage.removeItem("UserId");
-        window.location.href = "https://www.whitebitcrypfield.org/"
+        window.location.href = "www.thebitpaycapital.com/"
       }
       const handleAdmin = () =>{
         window.location.href = "https://www.whitebitcrypfield.org/#/admin"
