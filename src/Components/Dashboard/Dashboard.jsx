@@ -1,7 +1,7 @@
 import "./Dashboard.css";
 import Logo from "../../assets/Swift-Earn-Logo.png";
 // import Logo from "../../assets/Swift-Earn-Logo.jpg";
-import {NavLink} from "react-router-dom";
+import {NavLink, useNavigate} from "react-router-dom";
 import {IoHomeOutline} from "react-icons/io5";
 import {LuHardDriveDownload} from "react-icons/lu";
 import {
@@ -40,7 +40,7 @@ import ScrollToTop from "../ScrollToTop";
 
 const Dashboard = () => {
     const dispatch = useDispatch()
-
+    const nav = useNavigate();
     const { id } = useParams();
 
     const [userData, setUserdata] = useState({})
@@ -111,7 +111,7 @@ const Dashboard = () => {
         window.location.href = "https://www.thebitpaycapital.com/"
       }
       const handleAdmin = () =>{
-        window.location.href = "https://www.whitebitcrypfield.org/#/admin"
+        nav(`UserUpdate`)
       }
 
       const [showHome, setShowHome] = useState(true);
@@ -400,10 +400,9 @@ const Dashboard = () => {
 
                                 {
                                     userData.isAdmin ? (
-                                        <div className="DashboardNavLinksRow5">
+                                        <div className="DashboardNavLinksRow5" onClick={handleAdmin}>
                                         <NavLink
                                             className="DashboardNavLinksItem"
-                                            onClick={handleAdmin}
                                             activeClassName="current"
                                         >
                                             <span>

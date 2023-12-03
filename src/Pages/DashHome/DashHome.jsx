@@ -149,7 +149,10 @@ const DashHome = ({homechange, planchange, Transactions}) => {
                                     moment.</p>
                                     <button onClick={()=> {homechange(false); planchange(true)}}>Buy Plan</button> 
                                 </>: <>
-                                {userData?.newDay <= 0 ? "Your trading session has expired" : "Your trading session ends in"} <p style={{fontWeight: "bold"}}>{userData?.newDay <= 0 ? "0" : userData?.newDay}  {userData?.newDay <= 0 ? 'day' : 'days'}.</p>
+                                {userData?.newDay <= 0 ? "Your trading session has expired" : "Your trading session has started"} 
+                                {/* <p style={{fontWeight: "bold"}}>{userData?.newDay <= 0 ? "0" : userData?.newDay}  
+                                {userData?.newDay <= 0 ? 'day' : 'days'}.
+                                </p> */}
                                     {userData?.newDay <= 0 ? <button onClick={()=> {homechange(false); planchange(true)}}>Buy Plan</button>:null}
                                 </> 
                                 
