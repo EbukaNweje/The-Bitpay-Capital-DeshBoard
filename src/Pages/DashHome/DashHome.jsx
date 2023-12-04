@@ -92,7 +92,6 @@ const DashHome = ({homechange, planchange, Transactions}) => {
                                         <img src={lineChart} alt="" />
                                     </div>
                                 </div>
-                            {/* <div className="DashHomeMainContentAccSummaryRow2"> */}
                                 <div className="DashHomeMainContentAccSummaryRow2Box">
                                     <div className="DashHomeMainContentAccSummaryRow2BoxL">
                                         <h4>Referral Bonus</h4>
@@ -123,16 +122,6 @@ const DashHome = ({homechange, planchange, Transactions}) => {
                                         <img src={lineChart} alt="" />
                                     </div>
                                 </div>
-                                {/* <div className="DashHomeMainContentAccSummaryRow2Box">
-                                    <div className="DashHomeMainContentAccSummaryRow2BoxL">
-                                        <h4>Total Investment</h4>
-                                        <h3>$ &nbsp;{userData?.totalInvestment}.00</h3>
-                                        <span style={{fontWeight:"700"}}>{roundedNumber7}BTC</span>
-                                    </div>
-                                    <div className="DashHomeMainContentAccSummaryRow1BoxR">
-                                        <img src={lineChart} alt="" />
-                                    </div>
-                                </div> */}
                             {/* </div> */}
                             </div>
                         </div>
@@ -150,14 +139,10 @@ const DashHome = ({homechange, planchange, Transactions}) => {
                                     <button onClick={()=> {homechange(false); planchange(true)}}>Buy Plan</button> 
                                 </>: <>
                                 {userData?.newDay <= 0 ? "Your trading session has expired" : "Your trading session has started"} 
-                                {/* <p style={{fontWeight: "bold"}}>{userData?.newDay <= 0 ? "0" : userData?.newDay}  
-                                {userData?.newDay <= 0 ? 'day' : 'days'}.
-                                </p> */}
                                     {userData?.newDay <= 0 ? <button onClick={()=> {homechange(false); planchange(true)}}>Buy Plan</button>:null}
                                 </> 
                                 
                             }
-                            {/* <button>Buy a plan</button> */}
                         </div>
                     </div>
                     <div className="DashHomeMainContenRecentTransactionDiv">
