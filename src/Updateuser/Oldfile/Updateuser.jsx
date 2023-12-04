@@ -87,7 +87,7 @@ const UpdateWallet = ({Display}) => {
       //   axios.get(sessionUrl).then((response)=>{ console.log(response) });
       // }
 
-      const updatedata = {accountBalance,  ref, totalDeposit, totalWithdrawal};
+      const updatedata = {accountBalance, bonus,  ref, totalDeposit, totalWithdrawal};
       const updateprofile = (id) => {
         const updateuserurl = `https://the-bitpay-capital-back-end.vercel.app/api/userdata/${id}`
           console.log(updateuserurl)
@@ -136,12 +136,12 @@ const UpdateWallet = ({Display}) => {
             <Button onClick={(e)=>upddatebtn(props._id,e)} title={"lastDeposit"}>update</Button>
             <span>${props.totalProfit}</span>
           </InputData> */}
-            {/* <InputData>
+            <InputData>
             <label>Bonus: </label>
             <input placeholder='Amount' onChange={(e)=> setBonus(e.target.value)}/>
-            <Button onClick={(e)=>upddatebtn(props._id,e)} title={"lastDeposit"}>update</Button>
+            {/* <Button onClick={(e)=>upddatebtn(props._id,e)} title={"lastDeposit"}>update</Button> */}
             <span>${props.bonus}</span>
-          </InputData> */}
+          </InputData>
             {/* <InputData>
             <label>Total Investment: </label>
             <input  placeholder='Amount' onChange={(e)=> setTradingAccounts(e.target.value)}/>

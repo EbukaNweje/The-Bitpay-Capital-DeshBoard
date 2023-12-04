@@ -81,7 +81,7 @@ const DashHome = ({homechange, planchange, Transactions}) => {
                                     <div className="DashHomeMainContentAccSummaryRow1BoxR">
                                         <img src={lineChart} alt="" />
                                     </div>
-                                </div>
+                                </div> */}
                                 <div className="DashHomeMainContentAccSummaryRow1Box">
                                     <div className="DashHomeMainContentAccSummaryRow1BoxL">
                                         <h4>Bonus</h4>
@@ -91,7 +91,7 @@ const DashHome = ({homechange, planchange, Transactions}) => {
                                     <div className="DashHomeMainContentAccSummaryRow1BoxR">
                                         <img src={lineChart} alt="" />
                                     </div>
-                                </div> */}
+                                </div>
                             {/* <div className="DashHomeMainContentAccSummaryRow2"> */}
                                 <div className="DashHomeMainContentAccSummaryRow2Box">
                                     <div className="DashHomeMainContentAccSummaryRow2BoxL">
