@@ -498,7 +498,7 @@ const Dashboard = () => {
                             ) : null}
                         </div>
                         <div className="DashboardMainFooter">
-                            <p>All Rights Reserved ©  BitpayCapital 2023</p>
+                            <p>All Rights Reserved ©  Bitpaynexus 2024</p>
                         </div>
                     </div>
                 </div>

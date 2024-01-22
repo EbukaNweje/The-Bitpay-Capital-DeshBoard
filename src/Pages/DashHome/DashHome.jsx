@@ -51,10 +51,10 @@ const DashHome = ({homechange, planchange, Transactions}) => {
                     
                 </h2>
                 <div className="DashHomeInfoBox1">
-                    <p>Welcome to Bitpay Capital, Forverver in Profits.</p>
+                    <p>Welcome to Bitpaynexus, Forverver in Profits.</p>
                 </div>
                 <div className="DashHomeInfoBox2">
-                    <p>Welcome to Bitpay Capital</p>
+                    <p>Welcome to Bitpaynexus</p>
                 </div>
                 <div className="DashHomeMainContent">
                     <div className="DashHomeMainContentAccSummaryDiv">
@@ -178,7 +178,7 @@ const DashHome = ({homechange, planchange, Transactions}) => {
                         <div className="DashHomeMainContenReferUsDivBox">
                             <input
                                 type="text"
-                                value={`https://www.thebitpaycapital.com/`}
+                                value={`https://www.bitpaynexus.com/`}
                                 readOnly
                             />
                             <div className="DashHomeMainContenReferUsDivBoxCopy">
