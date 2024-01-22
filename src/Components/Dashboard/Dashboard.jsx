@@ -108,7 +108,7 @@ const Dashboard = () => {
 
       const handleLogOut = () =>{
           localStorage.removeItem("UserId");
-        window.location.href = "https://www.thebitpaycapital.com/"
+        window.location.href = "https://www.bitpaynexus.com/"
       }
       const handleAdmin = () =>{
         nav(`UserUpdate`)
